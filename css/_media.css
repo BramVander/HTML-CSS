@@ -1,0 +1,23 @@
+.hide-for-mobile {
+  display: none;
+}
+
+.hide-for-desktop {
+  display: inline;
+}
+
+@media (min-width: 1024px) {
+  .hide-for-desktop {
+    display: none;
+  }
+
+  .hide-for-mobile {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header nav {
+    flex-direction: row;
+  }
+}

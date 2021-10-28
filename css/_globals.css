@@ -1,3 +1,4 @@
+/* Setup */
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -23,21 +24,9 @@ a:hover {
   text-decoration: none;
 }
 
+/* Html validator */
 .validator {
   display: none;
-}
-
-.flex {
-  display: flex;
-}
-.flex-jc-sb {
-  justify-content: space-between;
-}
-.flex-jc-c {
-  justify-content: center;
-}
-.flex-ai-c {
-  align-items: center;
 }
 
 main {
@@ -161,9 +150,10 @@ textarea {
 
 .header nav {
   padding: 24px;
-  flex-direction: row;
+  flex-direction: column;
   background-color: lavender;
 }
+
 .header__menu > span {
   display: block;
   width: 1.625rem;
@@ -199,23 +189,3 @@ a.currentPage {
   padding-block-end: 1.5rem;
   color: #2d314d;
 }
-
-.hide-for-mobile {
-  display: none;
-}
-
-.hide-for-desktop {
-  display: inline;
-}
-
-@media (min-width: 1024px) {
-  .hide-for-desktop {
-    display: none;
-  }
-
-  .hide-for-mobile {
-    display: inline;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
