@@ -16,3 +16,9 @@ function initMap() {
   // initiate marker
   marker.setMap(map);
 }
+
+const hamburger = document.querySelector(".header__menu");
+hamburger.addEventListener("click", function (e) {
+  e.preventDefault();
+  hamburger.classList.toggle("open"); // open/close menu
+});
