@@ -17,8 +17,9 @@ function initMap() {
   marker.setMap(map);
 }
 
+// Open and close hamburger menu
 const hamburger = document.querySelector(".header__menu");
 hamburger.addEventListener("click", function (e) {
   e.preventDefault();
-  hamburger.classList.toggle("open"); // open/close menu
+  hamburger.classList.toggle("open");
 });

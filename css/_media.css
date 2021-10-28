@@ -1,3 +1,9 @@
+@media (min-width: 768px) {
+  header nav {
+    flex-direction: row;
+  }
+}
+
 .hide-for-mobile {
   display: none;
 }
@@ -13,11 +19,5 @@
 
   .hide-for-mobile {
     display: inline;
-  }
-}
-
-@media (min-width: 768px) {
-  .header nav {
-    flex-direction: row;
   }
 }
