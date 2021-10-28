@@ -1,0 +1,221 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+  line-height: 1.3;
+  font-family: monospace;
+  font-size: 1.125rem;
+  color: #9698a6;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.validator {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-ai-c {
+  align-items: center;
+}
+
+main {
+  background-color: #f0f8ff;
+  border-block-start: 1px solid black;
+  border-block-end: 1px solid black;
+  padding: 0px 100px;
+}
+
+button,
+.button {
+  padding: 1rem 1.875rem;
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  color: white;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+button:hover,
+.button:hover {
+  opacity: 0.75;
+  transition: opacity 300ms ease-in-out;
+}
+
+#banner img {
+  width: 100%;
+  border-block-end: 1px solid black;
+}
+
+#articles {
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  column-count: 1;
+  column-width: 16rem;
+  padding: 1em;
+}
+article h1 {
+  margin: 0;
+}
+article p {
+  margin: 0;
+  margin-block-start: 1em;
+}
+
+#photos {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  border-block-start: 1px solid black;
+  border-block-end: 1px solid black;
+}
+
+img:not(:last-child) {
+  margin-block-end: 30px;
+}
+
+#figures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#reverse {
+  flex-direction: row;
+}
+
+figure {
+  background-color: gray;
+  display: flex;
+  padding: 2rem;
+}
+figure img {
+  margin: 25px;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  width: 100%;
+  height: 400px;
+}
+
+.contact {
+  align-items: center;
+  margin: 0px;
+}
+.contact p {
+  margin-inline-start: 10px;
+}
+
+.form {
+  flex-direction: column;
+  min-width: 50%;
+}
+.form label {
+  height: fit-content;
+}
+.form input {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+label,
+input {
+  height: 3rem;
+  margin: 0.3rem;
+}
+
+textarea {
+  height: 10rem;
+  margin: 0.3rem;
+}
+
+.container--form {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f0f8ff;
+}
+
+.header nav {
+  padding: 24px;
+  flex-direction: row;
+  background-color: lavender;
+}
+.header__menu > span {
+  display: block;
+  width: 1.625rem;
+  height: 0.1825rem;
+  background-color: #2d314d;
+}
+.header__menu > span:not(:last-child) {
+  margin-block-end: 3px;
+}
+.header__links a {
+  font-size: 0.875rem;
+  color: #9698a6;
+  transition: color 300ms ease-in-out;
+}
+.header__links a:not(:last-child) {
+  margin-inline-end: 32px;
+}
+.header__links a:hover {
+  color: #2d314d;
+}
+.header__btn {
+  font-size: 0.875rem;
+  color: white;
+  font-weight: 400;
+}
+
+span {
+  color: darkslategray;
+}
+
+a.currentPage {
+  border-block-end: 3px solid;
+  padding-block-end: 1.5rem;
+  color: #2d314d;
+}
+
+.hide-for-mobile {
+  display: none;
+}
+
+.hide-for-desktop {
+  display: inline;
+}
+
+@media (min-width: 1024px) {
+  .hide-for-desktop {
+    display: none;
+  }
+
+  .hide-for-mobile {
+    display: inline;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
