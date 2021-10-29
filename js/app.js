@@ -6,7 +6,6 @@ hamburger.addEventListener("click", function (e) {
   e.preventDefault();
   overlay.classList.toggle("open");
   hamburgerMenu.classList.toggle("open-menu");
-  console.log(hamburgerMenu);
 });
 
 // Contact page
@@ -28,3 +27,10 @@ function initMap() {
   // initiate marker
   marker.setMap(map);
 }
+
+// JS for naving to homepage
+const goHome = function () {
+  window.location.assign(
+    "file:///C:/Users/bram1/Documents/GitHub/HTML-CSS/index.html"
+  );
+};

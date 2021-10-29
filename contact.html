@@ -20,13 +20,13 @@
       <div id="overlay"></div>
       <div id="hamburger-menu">
         <a href="./index.html">Home</a>
-        <a href="./education.html">Eductation</a>
+        <a href="./education.html">Education</a>
         <a href="./career.html">Career</a>
         <a href="./about.html">About</a>
-        <a href="./contact.html" class="currentPage">Contact</a>
+        <a href="./contact.html">Contact</a>
       </div>
       <nav>
-        <i class="material-icons"> code </i>
+        <i id="logo" class="material-icons" onclick="goHome()"> code </i>
 
         <a id="hamburger" class="hide-for-desktop" href="">
           <span></span>
@@ -35,16 +35,19 @@
         </a>
 
         <div class="nav-links hide-for-mobile">
-          <a href="./index.html" class="currentPage">Home</a>
-          <a href="./education.html">Eductation</a>
+          <a href="./index.html">Home</a>
+          <a href="./education.html">Education</a>
           <a href="./career.html">Career</a>
           <a href="./about.html">About</a>
-          <a href="./contact.html">Contact</a>
+          <a href="./contact.html" class="current-page">Contact</a>
         </div>
       </nav>
     </header>
     <section id="map"></section>
 
+    <footer>
+      <small> 2021 &copy; <a href="./contact.html">Bram Vander</a> </small>
+    </footer>
     <script src="js/app.js"></script>
   </body>
 </html>
