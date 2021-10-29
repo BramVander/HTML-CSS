@@ -189,7 +189,7 @@ footer {
 }
 
 #photos img {
-  width: 50%;
+  width: 100%;
   height: auto;
   margin: 1px;
 }
@@ -212,7 +212,6 @@ footer {
 .container--figures > figure {
   background-color: gray;
   display: flex;
-  max-width: 50%;
   flex-direction: column;
   padding: 1rem;
 }
@@ -226,7 +225,7 @@ iframe {
 }
 
 video {
-  max-width: 100%;
+  width: 100%;
 }
 
 .container--figures > figure > figcaption {
