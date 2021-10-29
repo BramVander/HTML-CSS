@@ -2,22 +2,19 @@
   header nav {
     flex-direction: row;
   }
-}
 
-.hide-for-mobile {
-  display: none;
-}
-
-.hide-for-desktop {
-  display: inline;
+  #articles {
+    flex-direction: row;
+    column-gap: 30px;
+  }
 }
 
 @media (min-width: 1024px) {
-  .hide-for-desktop {
-    display: none;
-  }
-
   .hide-for-mobile {
     display: inline;
+  }
+
+  .hide-for-desktop {
+    display: none;
   }
 }

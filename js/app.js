@@ -1,3 +1,15 @@
+const hamburger = document.querySelector("#hamburger");
+const hamburgerMenu = document.querySelector("#hamburger-menu");
+const overlay = document.querySelector("#overlay");
+
+hamburger.addEventListener("click", function (e) {
+  e.preventDefault();
+  overlay.classList.toggle("open");
+  hamburgerMenu.classList.toggle("open-menu");
+  console.log(hamburgerMenu);
+});
+
+// Contact page
 // Initialize and add the map
 function initMap() {
   // The location of Eindhoven
@@ -16,10 +28,3 @@ function initMap() {
   // initiate marker
   marker.setMap(map);
 }
-
-// Open and close hamburger menu
-const hamburger = document.querySelector(".header__menu");
-hamburger.addEventListener("click", function (e) {
-  e.preventDefault();
-  hamburger.classList.toggle("open");
-});

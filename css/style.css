@@ -1,4 +1,2 @@
-@import "_globals.css";
-@import "_variables.css";
-@import "_helpers.css";
-@import "_media.css";
+@import "./_globals.css";
+@import "./_media.css";

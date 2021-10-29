@@ -1,54 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="shortcut icon" href="#" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <title>bram.nl</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>HTML & CSS</title>
   </head>
   <body>
     <header>
-      <nav class="flex flex-jc-sb flex-ai-c">
-        <a href="#">
-          <span class="material-icons"> code </span>
+      <div id="overlay"></div>
+      <div id="hamburger-menu">
+        <a href="./index.html" class="currentPage">Home</a>
+        <a href="./education.html">Eductation</a>
+        <a href="./career.html">Career</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+      <nav>
+        <i class="material-icons"> code </i>
+
+        <a id="hamburger" class="hide-for-desktop" href="">
+          <span></span>
+          <span></span>
+          <span></span>
         </a>
 
-        <a class="header__menu hide-for-desktop" href="">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-
-        <div class="header__links hide-for-mobile">
+        <div class="nav-links hide-for-mobile">
           <a href="./index.html" class="currentPage">Home</a>
           <a href="./education.html">Eductation</a>
           <a href="./career.html">Career</a>
           <a href="./about.html">About</a>
           <a href="./contact.html">Contact</a>
         </div>
-
-        <!-- <a class="button header__btn" href="#">Request application</a> -->
       </nav>
     </header>
 
     <section id="banner">
+      <h2 class="validator">Banner Section</h2>
       <img src="./img/helloworld.jpg" alt="" />
     </section>
 
     <main>
       <section id="articles">
-        <h2 class="validator">Articles</h2>
+        <h2 class="validator">Article section</h2>
         <article>
           <h2>HTML</h2>
           <p>
             HTML is een taal om tekst te markeren. Het wordt gebruikt om tekst
             te voorzien van structuur: dit is het eerste hoofdstuk, deze regel
             is een titel, deze alinea is een paragraaf, dit woord is een
-            <a href="">link</a>, enzovoorts enzovoorts.
+            <a href="https://www.w3schools.com/html/" target="_blank">link</a>,
+            enzovoorts enzovoorts.
           </p>
         </article>
 
@@ -62,67 +69,7 @@
           </p>
         </article>
       </section>
-
-      <section id="photos">
-        <h2 class="validator">Photos, video's etc</h2>
-        <img
-          alt=""
-          srcset="./img/large.jpg 3x, ./img/medium.jpg 2x, ./img/small.jpg 1x"
-        />
-
-        <img
-          alt=""
-          srcset="./img/large.jpg 3x, ./img/medium.jpg 2x, ./img/small.jpg 1x"
-        />
-
-        <img
-          alt=""
-          srcset="./img/large.jpg 3x, ./img/medium.jpg 2x, ./img/small.jpg 1x"
-        />
-
-        <img
-          alt=""
-          srcset="./img/large.jpg 3x, ./img/medium.jpg 2x, ./img/small.jpg 1x"
-        />
-
-        <img
-          alt=""
-          srcset="./img/large.jpg 3x, ./img/medium.jpg 2x, ./img/small.jpg 1x"
-        />
-      </section>
-
-      <section id="figures">
-        <figure>
-          <img src="./img/small.jpg" alt="" />
-          <figcaption>
-            <h3>PLAATJE</h3>
-            <p>tekst lorem ipsum op een gekleurde achtergrond</p>
-          </figcaption>
-        </figure>
-
-        <figure id="reverse" class="reverse">
-          <img src="./img/small.jpg" alt="" />
-          <figcaption>
-            <h2>PLAATJE</h2>
-            <p>tekst lorem ipsum op een gekleurde achtergrond</p>
-          </figcaption>
-        </figure>
-
-        <figure>
-          <img src="./img/small.jpg" alt="" />
-          <figcaption>
-            <h2>PLAATJE</h2>
-            <p>tekst lorem ipsum op een gekleurde achtergrond</p>
-          </figcaption>
-        </figure>
-      </section>
     </main>
-
-    <footer>
-      <small>
-        2021 &copy; <a href="./pages/contact.html">Bram Vander</a>
-      </small>
-    </footer>
     <script src="js/app.js"></script>
   </body>
 </html>
