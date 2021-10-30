@@ -1,11 +1,27 @@
+// collect elements
 const hamburger = document.querySelector("#hamburger");
 const hamburgerMenu = document.querySelector("#hamburger-menu");
 const overlay = document.querySelector("#overlay");
+const btnContact = document.querySelector(".btn--contact");
+const subNavContent = document.querySelector(".subnav--content");
 
+// open overlay and hamburger on click
 hamburger.addEventListener("click", function (e) {
   e.preventDefault();
   overlay.classList.toggle("open");
   hamburgerMenu.classList.toggle("open-menu");
+  // hide map for menu
+  const gMap = document.querySelector("#map");
+  if (!gMap) return;
+  gMap.style.display === "none"
+    ? (gMap.style.display = "block")
+    : (gMap.style.display = "none");
+});
+
+// open sub nav menu on click
+btnContact.addEventListener("click", function (e) {
+  e.preventDefault();
+  subNavContent.classList.toggle("open-sub-nav");
 });
 
 // Contact page

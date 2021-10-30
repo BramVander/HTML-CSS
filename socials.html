@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpRHHq_kLzIrlLGlrQXGt9PmzjjaLsD04&callback=initMap"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Socials</title>
+  </head>
+  <body>
+    <header>
+      <div id="overlay"></div>
+      <div id="hamburger-menu">
+        <a href="./index.html">Home</a>
+        <a href="./education.html">Education</a>
+        <a href="./career.html">Career</a>
+        <a href="./about.html">About</a>
+        <a href="./vraag.html">Contact</a>
+      </div>
+      <nav>
+        <i id="logo" class="material-icons" onclick="goHome()"> code </i>
+
+        <a id="hamburger" class="hide-for-desktop" href="">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="nav-links hide-for-mobile">
+          <a href="./index.html">Home</a>
+          <a href="./education.html">Education</a>
+          <a href="./career.html">Career</a>
+          <a href="./about.html">About</a>
+          <div class="subnav">
+            <button class="btn--contact current-page" href="./contact.html">
+              Contact
+            </button>
+            <div class="subnav--content">
+              <a class="sub-nav-item" href="./vraag.html">Question</a>
+              <a class="sub-nav-item" href="./socials.html">Socials</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="map"></section>
+
+    <hr />
+
+    <section>
+      <div class="container--form">
+        <div>
+          <h2>Keep in touch!</h2>
+          <ul>
+            <li>
+              <span class="contact">
+                <img class="icon" src="./img/icon/facebook.png" alt="" />
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+              </span>
+            </li>
+            <li>
+              <span class="contact linkedin">
+                <img class="icon" src="./img/icon/linkedin.png" alt="" />
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+              </span>
+            </li>
+            <li>
+              <span class="contact">
+                <img class="icon" src="./img/icon/twitter.png" alt="" />
+                <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Contact Bram</h2>
+          <ul>
+            <li>
+              <span class="contact">
+                <i class="material-icons">phone</i>
+                <p>06 159 090 94</p>
+              </span>
+            </li>
+            <li>
+              <span class="contact">
+                <i class="material-icons">email</i>
+                <p>bram1105@hotmail.com</p>
+              </span>
+            </li>
+            <li>
+              <span class="contact">
+                <i class="material-icons">home</i>
+                <p>Eindhoven, 5616 CE</p>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <small> 2021 &copy; <a href="./socials.html">Bram Vander</a> </small>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>

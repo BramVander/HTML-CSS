@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <header>
+      <div id="overlay"></div>
+      <div id="hamburger-menu">
+        <a href="./index.html">Home</a>
+        <a href="./education.html">Education</a>
+        <a href="./career.html">Career</a>
+        <a href="./about.html">About</a>
+        <a href="./vraag.html">Contact</a>
+      </div>
+      <nav>
+        <i id="logo" class="material-icons" onclick="goHome()"> code </i>
+
+        <a id="hamburger" class="hide-for-desktop" href="">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="nav-links hide-for-mobile">
+          <a href="./index.html">Home</a>
+          <a href="./education.html">Education</a>
+          <a href="./career.html">Career</a>
+          <a href="./about.html" class="current-page">About</a>
+          <div class="subnav">
+            <button class="btn--contact" href="./contact.html">Contact</button>
+            <div class="subnav--content">
+              <a class="sub-nav-item" href="./vraag.html">Question</a>
+              <a class="sub-nav-item" href="./socials.html">Socials</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <footer>
+      <small> 2021 &copy; <a href="./socials.html">Bram Vander</a> </small>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
