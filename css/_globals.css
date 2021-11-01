@@ -238,6 +238,10 @@ main {
   margin: auto;
 }
 
+.video {
+  width: 100%;
+}
+
 /* Figure section */
 .container--figures {
   display: grid;
@@ -396,5 +400,3 @@ li {
   width: 50px;
   height: 50px;
 }
-
-/* photos */
