@@ -14,9 +14,9 @@
   <body>
     <header>
       <div id="overlay"></div>
-      <div id="hamburger-menu">
+      <div id="hamburger--menu">
         <a href="./index.html">Home</a>
-        <a href="./education.html">Education</a>
+        <a href="./education.html" class="current-page">Requirements</a>
         <a href="./career.html">Career</a>
         <a href="./about.html">About</a>
         <a href="./vraag.html">Contact</a>
@@ -30,36 +30,60 @@
           <span></span>
         </a>
 
-        <div class="nav-links hide-for-mobile">
+        <div class="nav--links hide-for-mobile">
           <a href="./index.html">Home</a>
-          <a href="./education.html" class="current-page">Education</a>
+          <a href="./education.html" class="current-page">Requirements</a>
           <a href="./career.html">Career</a>
           <a href="./about.html">About</a>
           <div class="subnav">
-            <button class="btn--contact" href="./contact.html">Contact</button>
+            <button class="btn--contact">Contact</button>
             <div class="subnav--content">
-              <a class="sub-nav-item" href="./vraag.html">Question</a>
-              <a class="sub-nav-item" href="./socials.html">Socials</a>
+              <a href="./vraag.html">Question</a>
+              <a href="./socials.html">Socials</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <section id="intro">
+    <section class="intro">
       <h2>Introduction</h2>
-      <p>On this page we can view the Academics of this web-developer.</p>
+      <p>
+        To be able to work with both HTML and CSS and actually build a webpage,
+        some form of education and portfolio will be needed and on this page we
+        can view the portfolio of someone who will try to become a
+        web-developer.
+      </p>
+
+      <p>
+        First off, some <a href="#knowledge">knowlegde</a> will be required.
+        There is alot to learn, not only HTML and CSS. For example, to build
+        some functionality we need a third langauge. The most comonly used
+        language for this is Javascript. Our example student has found a few
+        ways of obtaining knowledge. They are going to school, have some courses
+        on Udemy (even one for Javascript!) and went to a professional workshop
+        on cyber security.
+      </p>
+
+      <p>
+        Secondly, we need to be able to show off our new
+        <a href="#portfolio">skills</a>. To share projects or code examples, it
+        is recommended to use some kind of online repository. Our example
+        student has chosen to make use of GitHub.
+      </p>
     </section>
 
     <main>
       <section id="tables">
-        <h2>Academic History</h2>
+        <h2 id="knowledge">Knowledge</h2>
         <div class="container">
           <table>
-            <th colspan="2">LOI</th>
+            <tr>
+              <th colspan="2">LOI</th>
+            </tr>
             <tr>
               <td>HTML & CSS</td>
-              <td class="pending">Awaiting</td>
+              <td class="fail">Fail</td>
             </tr>
             <tr>
               <td>PHP & MySQL</td>
@@ -76,7 +100,9 @@
           </table>
 
           <table>
-            <th colspan="2">Udemy Online University</th>
+            <tr>
+              <th colspan="2">Udemy Online University</th>
+            </tr>
             <tr>
               <td>Javascript</td>
               <td class="pending">Awaiting</td>
@@ -92,7 +118,9 @@
           </table>
 
           <table>
-            <th colspan="2">White Hat Hackers</th>
+            <tr>
+              <th colspan="2">White Hat Hackers</th>
+            </tr>
             <tr>
               <td>Cyber Security</td>
               <td class="pass">Completed</td>
@@ -101,11 +129,8 @@
         </div>
       </section>
 
-      <hr />
-
       <section id="portfolio">
         <h2>Portfolio</h2>
-
         <dl>
           <dt>LOI Project</dt>
           <dd>HTML & CSS</dd>
@@ -117,9 +142,9 @@
           <dd>Booking page for wellness resort</dd>
         </dl>
         <br />
-        <a href="https://github.com/" target="_blank">
-          <button class="btn">Check GitHub!</button>
-        </a>
+        <form action="https://www.github.com" method="get" target="blank">
+          <button type="submit" class="btn">Check GitHub!</button>
+        </form>
       </section>
     </main>
     <footer>

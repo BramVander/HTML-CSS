@@ -14,9 +14,9 @@
   <body>
     <header>
       <div id="overlay"></div>
-      <div id="hamburger-menu">
-        <a href="./index.html">Home</a>
-        <a href="./education.html">Education</a>
+      <div id="hamburger--menu">
+        <a href="./index.html" class="current-page">Home</a>
+        <a href="./education.html">Requirements</a>
         <a href="./career.html">Career</a>
         <a href="./about.html">About</a>
         <a href="./vraag.html">Contact</a>
@@ -30,16 +30,16 @@
           <span></span>
         </a>
 
-        <div class="nav-links hide-for-mobile">
+        <div class="nav--links hide-for-mobile">
           <a href="./index.html" class="current-page">Home</a>
-          <a href="./education.html">Education</a>
+          <a href="./education.html">Requirements</a>
           <a href="./career.html">Career</a>
           <a href="./about.html">About</a>
           <div class="subnav">
-            <button class="btn--contact" href="./contact.html">Contact</button>
+            <button class="btn--contact">Contact</button>
             <div class="subnav--content">
-              <a class="sub-nav-item" href="./vraag.html">Question</a>
-              <a class="sub-nav-item" href="./socials.html">Socials</a>
+              <a href="./vraag.html">Question</a>
+              <a href="./socials.html">Socials</a>
             </div>
           </div>
         </div>
@@ -51,82 +51,116 @@
       <img src="./img/helloworld.jpg" alt="" />
     </section>
 
+    <section class="intro">
+      <h2>Introduction</h2>
+      <p>
+        This page is about the basics of web-development. It all starts with
+        HTML & CSS so this page will tell you more down below! If you are
+        interested in becomming a web-developer yourself, feel free to check out
+        the rest of the page as well.
+      </p>
+    </section>
+
     <main>
       <section id="articles">
-        <h2 class="validator">Article section</h2>
+        <h2 class="validator">Articles</h2>
         <article>
           <h2>
-            HTML<sup><a href="#1">1</a></sup>
+            HTML<a href="#1"><sup>1</sup></a>
           </h2>
           <p>
-            HTML is een taal om tekst te markeren. Het wordt gebruikt om tekst
-            te voorzien van structuur: dit is het eerste hoofdstuk, deze regel
-            is een titel, deze alinea is een paragraaf, dit woord is een
+            HTML is a markup language. It is used to give rise to structure in
+            text by marking the text. Declaring a line as a heading element will
+            display it as a heading. The same goes for a paragraph, an image, a
             <a href="https://www.w3schools.com/html/" target="_blank">link</a>,
-            enzovoorts enzovoorts.
+            etcetera, etcetera.
           </p>
         </article>
 
         <article>
           <h2>
-            CSS<sup><a href="#2">2</a></sup>
+            CSS<a href="#2"><sup>2</sup></a>
           </h2>
           <p>
-            CSS is dan weer een lay-out taal en wordt gebruikt om opmaak aan
-            tekst te geven. Het draagt bij aan leesbaarheid als titels
-            <strong>dikgedrukt</strong> zijn, dat er kleur in de tekst zichtbaar
-            is of als bepaalde zaken onderstreept of omlijnd zijn.
+            CSS is a language for the lay-out. It is used to give styling to
+            certain text or HTML elements. It enhances readability when headings
+            are <strong>bold</strong>, if there is use of color or when certain
+            things are lined out. With both of these tools you are able to build
+            a full webpage! <a href="#3"><sup>3</sup></a>
           </p>
         </article>
       </section>
 
       <section id="photos">
-        <h2>Foto's, video etc</h2>
+        <h2>Photo's, videos etc</h2>
         <div class="container--photos">
-          <img src="./img/code.jpg" alt="" />
-          <img src="./img/code2.jpg" alt="" />
-          <img
-            src="./img/small.jpg"
-            srcset="./img/small.jpg 1x, ./img/medium.jpg 2x, ./img/large.jpg 3x"
-            alt=""
-          />
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/N775KsWQVkw"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <video src="./video/local.mp4" controls></video>
+          <div class="column">
+            <img class="responsive" src="./img/code.jpg" alt="" />
+          </div>
+          <div class="column">
+            <img class="responsive" src="./img/code2.jpg" alt="" />
+          </div>
+          <div class="column">
+            <img class="responsive" src="./img/logos.jpg" alt="" />
+          </div>
+          <div class="column column-grow">
+            <img
+              class="responsive grow"
+              src="./img/small.jpg"
+              alt=""
+              srcset="
+                ./img/small.jpg  1x,
+                ./img/medium.jpg 2x,
+                ./img/large.jpg  3x
+              "
+            />
+          </div>
+          <div class="column column-grow">
+            <img
+              class="responsive grow"
+              src="./img/small.jpg"
+              alt=""
+              srcset="
+                ./img/small.jpg  1x,
+                ./img/medium.jpg 2x,
+                ./img/large.jpg  3x
+              "
+            />
+          </div>
         </div>
       </section>
 
-      <section>
-        <h2 class="validator">Plaatjes</h2>
+      <section id="figures">
+        <h2 class="validator">Figures</h2>
         <div class="container--figures">
           <figure id="1">
-            <img src="./img/html.jpg" alt="" />
+            <img src="./img/html.png" alt="" />
             <figcaption>
               <h2>Fig 1.</h2>
-              <p>Some HTML code for markup.</p>
+              <p>
+                Some HTML code for markup. This is pretty basic HTML, only the
+                essentials for initializing a new page and a 'hello-world'
+                image.
+              </p>
             </figcaption>
           </figure>
 
-          <figure id="2">
+          <figure id="2" class="reverse">
             <img src="./img/css.jpg" alt="" />
             <figcaption>
               <h2>Fig 2</h2>
               <p>
-                Some CSS code for styling. We see two elements, which have some
-                properties set.
+                Some CSS code for styling. We see an image element, which has
+                some properties set: padding, the image size and position.
               </p>
             </figcaption>
           </figure>
 
           <figure id="3">
-            <img src="./img/webpage.jpg" alt="" />
+            <img src="./img/page.jpg" alt="" />
             <figcaption>
               <h2>Fig 3</h2>
-              <p>A webpage build and styled with both HTML & CSS!</p>
+              <p>A webpage build and styled with both HTML & CSS!.</p>
             </figcaption>
           </figure>
         </div>

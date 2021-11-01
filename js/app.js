@@ -1,6 +1,6 @@
 // collect elements
 const hamburger = document.querySelector("#hamburger");
-const hamburgerMenu = document.querySelector("#hamburger-menu");
+const hamburgerMenu = document.querySelector("#hamburger--menu");
 const overlay = document.querySelector("#overlay");
 const btnContact = document.querySelector(".btn--contact");
 const subNavContent = document.querySelector(".subnav--content");
@@ -46,7 +46,5 @@ function initMap() {
 
 // JS for naving to homepage
 const goHome = function () {
-  window.location.assign(
-    "file:///C:/Users/bram1/Documents/GitHub/HTML-CSS/index.html"
-  );
+  location.href = "http://127.0.0.1:5500/index.html";
 };

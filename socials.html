@@ -18,12 +18,12 @@
   <body>
     <header>
       <div id="overlay"></div>
-      <div id="hamburger-menu">
+      <div id="hamburger--menu">
         <a href="./index.html">Home</a>
-        <a href="./education.html">Education</a>
+        <a href="./education.html">Requirements</a>
         <a href="./career.html">Career</a>
         <a href="./about.html">About</a>
-        <a href="./vraag.html">Contact</a>
+        <a href="./vraag.html" class="current-page">Contact</a>
       </div>
       <nav>
         <i id="logo" class="material-icons" onclick="goHome()"> code </i>
@@ -34,23 +34,22 @@
           <span></span>
         </a>
 
-        <div class="nav-links hide-for-mobile">
+        <div class="nav--links hide-for-mobile">
           <a href="./index.html">Home</a>
-          <a href="./education.html">Education</a>
+          <a href="./education.html">Requirements</a>
           <a href="./career.html">Career</a>
           <a href="./about.html">About</a>
           <div class="subnav">
-            <button class="btn--contact current-page" href="./contact.html">
-              Contact
-            </button>
+            <button class="btn--contact current-page">Contact</button>
             <div class="subnav--content">
-              <a class="sub-nav-item" href="./vraag.html">Question</a>
-              <a class="sub-nav-item" href="./socials.html">Socials</a>
+              <a href="./vraag.html">Question</a>
+              <a href="./socials.html">Socials</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
+
     <section id="map"></section>
 
     <hr />

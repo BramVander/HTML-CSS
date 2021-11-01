@@ -5,11 +5,7 @@
 
   #articles {
     flex-direction: row;
-    column-gap: 30px;
-  }
-
-  video {
-    max-width: 57%;
+    column-gap: 3rem;
   }
 
   table {
@@ -18,48 +14,66 @@
 
   table:not(:last-child) {
     margin-block-end: 0px;
-    margin-inline-end: 5px;
+    margin-inline-end: 2rem;
   }
 
   .container {
     flex-direction: row;
   }
-}
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  #photos img {
+  .container--photos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .column {
     width: 30%;
-    height: auto;
-    margin: 1px;
   }
 
-  #photos img:nth-child(1) {
+  .column-grow {
+    width: 48%;
+  }
+
+  .responsive {
+    width: 100%;
+    display: flex;
     flex-grow: 1;
   }
-  #photos img:nth-child(2) {
-    flex-grow: 1;
-  }
-  #photos img:nth-child(3) {
-    flex-grow: 1;
-  }
-  #photos img:nth-child(4) {
-    flex-grow: 2;
-  }
-  #photos img:nth-child(5) {
+
+  .grow {
     flex-grow: 2;
   }
 
-  .container--figures > figure {
+  #articles {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .container--figures {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  figure {
+    display: flex;
     flex-direction: row;
-    column-gap: 1rem;
   }
 
-  .container--figures > figure:nth-child(2) {
+  figure img {
+    width: 50%;
+  }
+
+  figcaption {
+    padding: 0px 5px;
+  }
+
+  figcaption h2 {
+    margin: 0;
+  }
+
+  .reverse {
     flex-direction: row-reverse;
-  }
-
-  .container--figures > figure > img {
-    max-width: 50%;
   }
 }
 
@@ -73,37 +87,39 @@
   }
 
   .container--photos {
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 0;
   }
 
-  #photos img {
-    max-width: 15%;
+  .column {
+    width: 100%;
+  }
+
+  .reverse {
+    flex-direction: row;
   }
 
   .container--figures {
-    flex-direction: row;
-    column-gap: 1rem;
+    display: flex;
   }
 
-  .container--figures > figure {
-    margin-inline: 0.3rem;
+  figure {
+    margin: 0;
   }
 
-  .container--figures > figure > img {
-    max-width: 100%;
-  }
-
-  iframe {
-    max-width: 25%;
-  }
-
-  video {
-    max-width: 28%;
+  figure:not(:last-child) {
+    margin-inline-end: 5px;
   }
 }
 
 @media (min-width: 1440px) {
   main {
-    padding-inline: 6.25rem;
+    padding-inline: 10rem;
+  }
+
+  .intro {
+    padding-inline: 10rem;
   }
 }
