@@ -238,6 +238,10 @@ main {
   margin: auto;
 }
 
+.column:hover {
+  transform: scale(1.1);
+}
+
 .video {
   width: 100%;
 }
