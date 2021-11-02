@@ -16,13 +16,16 @@
       <div id="overlay"></div>
       <div id="hamburger--menu">
         <a href="./index.html" class="current-page">Home</a>
-        <a href="./education.html">Requirements</a>
-        <a href="./career.html">Career</a>
+        <a href="./requirements.html">Requirements</a>
+        <a href="./experience.html">Experience</a>
         <a href="./about.html">About</a>
         <a href="./vraag.html">Contact</a>
       </div>
       <nav>
-        <i id="logo" class="material-icons" onclick="goHome()"> code </i>
+        <div class="logo">
+          <p onclick="goHome()">Webdev 101</p>
+          <i id="logo" class="material-icons" onclick="goHome()"> code </i>
+        </div>
 
         <a id="hamburger" class="hide-for-desktop" href="">
           <span></span>
@@ -32,8 +35,8 @@
 
         <div class="nav--links hide-for-mobile">
           <a href="./index.html" class="current-page">Home</a>
-          <a href="./education.html">Requirements</a>
-          <a href="./career.html">Career</a>
+          <a href="./requirements.html">Requirements</a>
+          <a href="./experience.html">Experience</a>
           <a href="./about.html">About</a>
           <div class="subnav">
             <button class="btn--contact">Contact</button>
@@ -46,7 +49,7 @@
       </nav>
     </header>
 
-    <section id="banner">
+    <section class="banner">
       <h2 class="validator">Banner Section</h2>
       <img src="./img/helloworld.jpg" alt="" />
     </section>
@@ -95,26 +98,24 @@
         <h2>Photo's, videos etc</h2>
         <div class="container--photos">
           <div class="column">
-            <img class="responsive" src="./img/code.jpg" alt="" />
+            <img
+              class="responsive"
+              src="./img/code.jpg"
+              alt=""
+              srcset="./img/code.jpg 1x, ./img/code-big.jpg 2x"
+            />
           </div>
           <div class="column">
-            <img class="responsive" src="./img/code2.jpg" alt="" />
+            <img
+              class="responsive"
+              src="./img/code2.jpg"
+              srcset="./img/code2.jpg 1x, ./img/code2-big.jpg 2x"
+              alt=""
+            />
           </div>
           <div class="column">
             <img class="responsive" src="./img/logos.jpg" alt="" />
           </div>
-          <!-- <div class="column column-grow">
-            <img
-              class="responsive grow"
-              src="./img/small.jpg"
-              alt=""
-              srcset="
-                ./img/small.jpg  1x,
-                ./img/medium.jpg 2x,
-                ./img/large.jpg  3x
-              "
-            />
-          </div> -->
           <div class="column column-grow">
             <iframe
               class="video"
@@ -134,7 +135,7 @@
         <h2 class="validator">Figures</h2>
         <div class="container--figures">
           <figure id="1">
-            <img src="./img/html.png" alt="" />
+            <img src="./img/html.png" alt="" srcset="./img/html-big.jpg 2x" />
             <figcaption>
               <h2>Fig 1.</h2>
               <p>
@@ -146,7 +147,7 @@
           </figure>
 
           <figure id="2" class="reverse">
-            <img src="./img/css.jpg" alt="" />
+            <img src="./img/css.jpg" alt="" srcset="./img/css-big.jpg 2x" />
             <figcaption>
               <h2>Fig 2</h2>
               <p>
@@ -157,7 +158,7 @@
           </figure>
 
           <figure id="3">
-            <img src="./img/page.jpg" alt="" />
+            <img src="./img/page.jpg" alt="" srcset="./img/page-big.jpg 2x" />
             <figcaption>
               <h2>Fig 3</h2>
               <p>A webpage build and styled with both HTML & CSS!.</p>

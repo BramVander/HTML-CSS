@@ -16,13 +16,16 @@
       <div id="overlay"></div>
       <div id="hamburger--menu">
         <a href="./index.html">Home</a>
-        <a href="./education.html">Requirements</a>
-        <a href="./career.html">Career</a>
+        <a href="./requirements.html">Requirements</a>
+        <a href="./experience.html">Experience</a>
         <a href="./about.html" class="current-page">About</a>
         <a href="./vraag.html">Contact</a>
       </div>
       <nav>
-        <i id="logo" class="material-icons" onclick="goHome()"> code </i>
+        <div class="logo">
+          <p onclick="goHome()">Webdev 101</p>
+          <i id="logo" class="material-icons" onclick="goHome()"> code </i>
+        </div>
 
         <a id="hamburger" class="hide-for-desktop" href="">
           <span></span>
@@ -32,8 +35,8 @@
 
         <div class="nav--links hide-for-mobile">
           <a href="./index.html">Home</a>
-          <a href="./education.html">Requirements</a>
-          <a href="./career.html">Career</a>
+          <a href="./requirements.html">Requirements</a>
+          <a href="./experience.html">Experience</a>
           <a href="./about.html" class="current-page">About</a>
           <div class="subnav">
             <button class="btn--contact">Contact</button>
@@ -45,6 +48,55 @@
         </div>
       </nav>
     </header>
+
+    <section class="banner">
+      <h2 class="validator">Banner section</h2>
+      <img src="./img/banner.jpg" alt="" />
+    </section>
+
+    <section class="intro">
+      <h2>Introduction</h2>
+      <p>
+        Your future employer surely wants to know who he's hiring as a person
+        and if that person fits in his or her team. So it's good practise to
+        give some kind of introduction on what you are all about.
+      </p>
+    </section>
+
+    <main>
+      <section>
+        <h2>Example Resume</h2>
+        <div class="some__grid">
+          <li>hobby - pictures</li>
+          <li>language - proficiency grid</li>
+          <li>religion</li>
+          <li>philosophy - article</li>
+          <li>music - song
+            <li>sports</li>
+          </li>
+        </div>
+      </section>
+    </main>
+
+    <section class="hobby">
+      <h2>Hobby</h2>
+      <div class="test">
+        <img class="icon" src="./img/icon/flower.png" alt="">
+        <p>Flowers, plants, nature</p>
+
+        <img class="icon" src="./img/icon/footprint.png" alt="">
+        <p>Animals. I have 2 pet cats.</p>
+
+        <img class="icon" src="./img/icon/music.png" alt="">
+        <p>Music. Example song</p>
+
+        <img class="icon" src="./img/icon/thoughts.png" alt="">
+        <p>Thoughts on life. Religion? Filosophy?</p>
+
+        <img class="icon" src="./img/icon/code.png" alt="">
+        <p>Coding. I love to learn!</p>
+      </div>
+    </section>
 
     <footer>
       <small> 2021 &copy; <a href="./socials.html">Bram Vander</a> </small>

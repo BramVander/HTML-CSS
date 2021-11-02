@@ -103,6 +103,19 @@ header button:hover {
   transition: color 300ms ease-in-out;
 }
 
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.logo p {
+  position: absolute;
+  top: -9px;
+  color: var(--text);
+}
+
 .subnav {
   float: right;
   overflow: hidden;
@@ -201,14 +214,15 @@ a > span:not(:last-child) {
 
 /* Outline main content */
 main {
-  background-color: lightyellow;
+  background-color: rgb(236, 248, 236);
   border-block: 1px solid black;
   padding: 30px;
 }
 
 /* Banner img */
-#banner img {
+.banner img {
   width: 100%;
+  max-height: 400px;
 }
 
 /* Article section */
@@ -279,7 +293,7 @@ figcaption {
   padding-block-end: 1rem;
 }
 
-/* Education page */
+/* Requirements page */
 #tables {
   margin-block-end: 3rem;
 }
@@ -335,10 +349,61 @@ td {
 
 .intro {
   padding: 30px;
+  background-color: lightyellow;
+  font-family: "Mina";
+  font-size: 18px;
 }
 
-#portfolio {
+#portfolio,
+#future {
   border-block-start: 1px solid black;
+}
+
+#portfolio__image img {
+  height: auto;
+  max-width: 260px;
+}
+
+.list {
+  padding-inline-start: 20px;
+}
+.list li {
+  list-style-type: circle;
+}
+
+/* Experience page */
+.grid__internship {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  align-items: center;
+}
+
+.grid__internship img {
+  max-width: 200px;
+  height: auto;
+  margin: auto;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: end;
+}
+
+.resume img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* About page */
+.hobby {
+  display: grid;
+}
+
+.test {
+  align-items: center;
+  margin: auto;
 }
 
 /* Contact page */
@@ -356,6 +421,7 @@ td {
 form {
   display: flex;
   flex-direction: column;
+  margin-block-end: 1rem;
 }
 
 textarea {

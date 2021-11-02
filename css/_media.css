@@ -75,6 +75,26 @@
   .reverse {
     flex-direction: row-reverse;
   }
+
+  #portfolio__image img {
+    float: right;
+  }
+
+  .grid__internship {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .resume {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img__resume {
+    margin-block-start: 2rem;
+    margin-inline-end: 2rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -121,5 +141,9 @@
 
   .intro {
     padding-inline: 10rem;
+  }
+
+  #portfolio__image img {
+    right: 10rem;
   }
 }
