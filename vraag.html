@@ -59,25 +59,17 @@
 
     <main>
       <div class="container--form">
-        <form
-          class="form"
-          action="https://jkorpela.fi/cgi-bin/echo.cgi"
-          method="get"
-        >
-          <h2>Ask a question</h2>
-          <label for="name">Name:</label>
-          <input id="name" type="text" required />
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+          <label for="fullname">Full name: </label>
+          <input type="text" id="fullname" name="fullname" required />
+          <label for="email">Email: </label>
+          <input type="text" id="email" name="email" required />
+          <label for="telephone">Telephone: </label>
+          <input type="text" id="telephone" name="telephone" />
+          <label for="question">Your question:</label>
+          <textarea name="question" id="question" required></textarea>
 
-          <label for="email">Email:</label>
-          <input id="email" type="email" required />
-
-          <label for="phone">Phone number:</label>
-          <input id="phone" type="number" />
-
-          <label for="question">Ask your question:</label>
-          <textarea id="question" required></textarea>
-
-          <input class="btn" type="submit" />
+          <input class="btn" type="submit" value="Submit" />
         </form>
       </div>
     </main>

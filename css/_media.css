@@ -95,6 +95,12 @@
     margin-block-start: 2rem;
     margin-inline-end: 2rem;
   }
+
+  .proficiency {
+    display: flex;
+    text-align: start;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -141,9 +147,5 @@
 
   .intro {
     padding-inline: 10rem;
-  }
-
-  #portfolio__image img {
-    right: 10rem;
   }
 }

@@ -1,4 +1,4 @@
-/* Setup */
+/* Setup
 /* Variables */
 :root {
   --background: lavender;
@@ -397,13 +397,58 @@ td {
 }
 
 /* About page */
-.hobby {
+.hobby-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 5px;
 }
 
-.test {
+.card {
+  background-color: white;
+  box-shadow: 5px 5px 5px gray;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: auto;
+  text-align: center;
+  padding: 50px;
+  margin: 1rem;
+}
+
+.card p {
+  border-block-start: 1px solid black;
+  padding-block-start: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon-hobby {
+  width: 50px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 1px;
+}
+
+.proficiency {
+  display: block;
+  text-align: start;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.proficiency div {
+  display: flex;
+  align-items: center;
+}
+
+.star__rating {
+  padding: 1rem;
+}
+
+.checked {
+  color: orange;
 }
 
 /* Contact page */
