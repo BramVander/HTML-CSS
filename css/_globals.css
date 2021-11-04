@@ -222,7 +222,7 @@ main {
 /* Banner img */
 .banner img {
   width: 100%;
-  max-height: 400px;
+  max-height: 500px;
 }
 
 /* Article section */
@@ -451,11 +451,26 @@ td {
   color: orange;
 }
 
+.dynamics {
+  height: auto;
+  width: 200px;
+}
+
+.bi {
+  background-image: url(../img/dynamics-big.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  color: black;
+  height: 500px;
+  font-weight: 700;
+}
+
 /* Contact page */
 /* Set the size of the section element that contains the map */
 #map {
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 
 .container--form {
