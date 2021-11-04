@@ -389,6 +389,7 @@ td {
   flex-direction: column;
   align-items: center;
   text-align: end;
+  border-block: 1px solid black;
 }
 
 .resume img {
@@ -464,6 +465,10 @@ td {
   color: black;
   height: 500px;
   font-weight: 700;
+}
+
+.motivation {
+  border-block: 1px solid black;
 }
 
 /* Contact page */
