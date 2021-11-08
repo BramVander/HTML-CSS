@@ -22,9 +22,8 @@
   <body>
     <header>
       <nav>
-        <div onclick="goHome()">
-          <img class="logo" src="" alt="" />sadf
-          <p class="hide-mobile">text</p>
+        <div class="img-container" onclick="goHome()">
+          <h2>Logo tekst</p>
         </div>
 
         <div id="hamburger-icon" class="hamburger-icon hide-desktop">
@@ -34,19 +33,18 @@
         </div>
 
         <div class="nav-links hide-mobile">
-          <a href="">Home</a>
+          <a href="#">Home</a>
           <a href="">page 1</a>
           <a href="">page 2</a>
           <a href="">page 3</a>
-          <a href="">Contact</a>
+          <a href="#t">Contact</a>
         </div>
       </nav>
     </header>
 
-    <section>
-      <h1 class="validator">All about</h1>
-      <h2 class="validator">Banner</h2>
-      <img class="banner" src="" alt="" />
+    <section id="banner">
+        <h1 class="banner-title">All about</h1>
+        <h2>Banner</h2>
     </section>
 
     <div class="container-main">
@@ -63,7 +61,7 @@
                   similique ipsum earum adipisci corrupti, voluptatem est
                   accusantium fugit non explicabo totam vel porro nihil? Facilis
                   voluptatibus voluptate atque, minus nulla quod, eligendi unde
-                  dolore deserunt illo, error eaque porro modi?
+                  dolore deserunt illo, error eaque porro modi? <a href="#">Lees meer</a>
                 </p>
               </article>
 
@@ -76,8 +74,20 @@
                   maiores quaerat debitis rem distinctio praesentium totam. Iste
                   asperiores dicta placeat veniam dolorum ipsum a explicabo
                   accusamus totam? Sunt officiis laborum mollitia repellat
-                  magnam?
-                </p>
+                  magnam? <a href="#">Lees meer</a>
+                </p>              
+                
+                <article>
+                  <h3>artikel 2</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum, ut, tempore, sed porro temporibus ullam culpa eaque
+                    est nesciunt quo consequuntur nisi? Neque ratione ducimus cum
+                    maiores quaerat debitis rem distinctio praesentium totam. Iste
+                    asperiores dicta placeat veniam dolorum ipsum a explicabo
+                    accusamus totam? Sunt officiis laborum mollitia repellat
+                    magnam? <a href="#">Lees meer</a>
+                  </p>
               </article>
             </div>
           </section>
@@ -87,7 +97,7 @@
             Photo's video's etc
           </section>
 
-          <section>
+          <section id="t">
             <h2 class="validator">Plaatjes</h2>
             Plaatje
           </section>
@@ -96,6 +106,13 @@
     </div>
 
     <script src="js/script.js"></script>
-    <footer>2021 &copy; Bram Vander SOCIAL ICONS??</footer>
+    <footer>2021 &copy; BramVander 
+      <img src="./img/icons/facebook.png" alt="" class="icon">
+      <a href="www.facebook.com" target="_blank">Facebook</a>
+      <img src="./img/icons/twitter.png" alt="" class="icon">
+      <a href="www.twitter.com" target="_blank">Twitter</a>
+      <img src="./img/icons/linkedin.png" alt="" class="icon">
+      <a href="www.linkedin.com" target="_blank">LinkedIn</a>
+    </footer>
   </body>
 </html>
