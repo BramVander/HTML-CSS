@@ -1,0 +1,19 @@
+/* Media queries */
+
+.hide-mobile {
+  display: none;
+}
+
+.hide-desktop {
+  display: inline;
+}
+
+@media (min-width: 1024px) {
+  .hide-mobile {
+    display: flex;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+}
