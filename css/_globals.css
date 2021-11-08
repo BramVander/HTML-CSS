@@ -1,6 +1,7 @@
 /* Set up */
 :root {
   --background: rgb(220, 246, 255);
+  --gray: gray;
   --white: white;
   --text: black;
   --navbar: gold;
@@ -27,7 +28,7 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-  color: var(--text);
+  color: var(--gray);
   font-weight: 400;
 }
 
@@ -130,8 +131,8 @@ nav p {
   margin-inline-end: 2.5rem;
 }
 
-.nav--links a:hover {
-  color: black;
+.nav-links a:hover {
+  color: var(--text);
   transition: color 300ms ease-in-out;
 }
 
@@ -152,9 +153,20 @@ nav p {
   transition: opacity 300ms ease-in-out;
 }
 
+/* Active link */
+.current-page {
+  color: black !important;
+}
+
 /* Footer */
 footer {
   background-color: var(--white);
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  height: auto;
 }
 
 /* Main card */
