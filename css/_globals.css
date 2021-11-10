@@ -59,7 +59,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: var(--navbar);
-  font-size: medium;
 }
 
 nav div:hover {
@@ -69,6 +68,18 @@ nav div:hover {
 nav div h2 {
   margin: 0;
   padding: 0;
+  color: var(--gray);
+}
+
+/* Logo & Text */
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
 }
 
 /* Hamburger */
@@ -167,7 +178,7 @@ nav div h2 {
   background: black;
   border-radius: 50px;
   position: relative;
-  top: 27px;
+  top: -44px;
   opacity: 0;
 }
 
@@ -179,7 +190,7 @@ nav div h2 {
   background: black;
   border-radius: 50px;
   position: relative;
-  top: 29px;
+  top: -42px;
   opacity: 0;
 }
 
@@ -225,7 +236,6 @@ nav div h2 {
   position: absolute;
   background-color: var(--white);
   border-radius: 5px;
-  box-shadow: 10px 10px 10px grey;
 }
 
 .dropdown-content a {
@@ -293,9 +303,8 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: lightgreen;
-  background-image: url("../img/beans-medium.jpg.jpg");
+  background-image: url("../img/bean-mobile.jpg");
   background-size: cover;
-  background-attachment: absolute;
   background-position: center;
   background-repeat: no-repeat;
 }

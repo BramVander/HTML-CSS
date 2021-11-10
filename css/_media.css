@@ -8,6 +8,15 @@
   display: inline;
 }
 
+/* Queries for tablet */
+@media (min-width: 768px) {
+  /* Set img size for banner */
+  #banner {
+    background-image: url("../img/bean-tablet.jpg") !important;
+  }
+}
+
+/* Queries for desktop */
 @media (min-width: 1024px) {
   .hide-mobile {
     display: flex;
@@ -17,8 +26,14 @@
     display: none;
   }
 
-  /* Set size for banner */
   #banner {
-    background-image: url("../img/beans-big.jpg.jpg");
+    background-image: url("../img/bean-desktop.jpg") !important;
+  }
+}
+
+/* Queries for big screens */
+@media (min-width: 1440px) {
+  #banner {
+    background-image: url("../img/bean-big.jpg") !important;
   }
 }
