@@ -3,7 +3,7 @@
   --background: rgb(220, 246, 255);
   --gray: gray;
   --white: white;
-  --links: aqua;
+  --links: rgb(247, 9, 9);
   --text: black;
   --navbar: gold;
   --font: "Source Code Pro";
@@ -68,11 +68,10 @@ nav div:hover {
 nav div h2 {
   margin: 0;
   padding: 0;
-  color: var(--gray);
 }
 
 /* Logo & Text */
-.img-container {
+.logo-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,6 +140,60 @@ nav div h2 {
   transform: rotate(-45deg);
   top: 18px;
   left: 0;
+}
+
+/* Overlay & Mobile menu */
+.overlay {
+  display: block;
+  position: absolute;
+  top: 340px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, black, white);
+  opacity: 0;
+}
+
+.overlay.open {
+  opacity: 0.9;
+  transition: opacity 200ms ease-in-out;
+}
+
+/* Prevent scroll on body when overlay is open */
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  height: 0px;
+  opacity: 0;
+  background-color: var(--navbar);
+  transition: height 200ms ease-in-out, opacity 200ms ease-in-out;
+}
+
+.mobile-menu.open {
+  height: 240px;
+  opacity: 1;
+}
+
+ul {
+  margin: 0 !important;
+}
+
+ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+ul li a {
+  color: var(--black) !important;
+  text-transform: uppercase;
+}
+
+li {
+  margin-block-end: 1rem;
 }
 
 /* Nav submenu */
@@ -227,15 +280,16 @@ nav div h2 {
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .dropdown-content {
   display: none;
-  min-width: 100px;
   position: absolute;
+  min-width: 100px;
   background-color: var(--white);
   border-radius: 5px;
+  z-index: 1;
 }
 
 .dropdown-content a {
@@ -295,7 +349,6 @@ footer {
 }
 
 /* Banner */
-
 #banner {
   display: flex;
   height: 200px;
@@ -329,4 +382,7 @@ footer {
   border-radius: 1rem;
   box-shadow: 10px 10px 10px grey;
   margin-block: 1rem;
+}
+
+hr {
 }

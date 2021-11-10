@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>All about Coffee</title>
   </head>
-  <body>
+  <body class="body">
     <header>
       <nav>
-        <div class="img-container" onclick="goHome()">
+        <div class="logo-container" onclick="goHome()">
           <img src="./img/icons/logo.png" alt="" class="icon logo">
-          <h2>Logo tekst</p>
+          <h2>Coffee</p>
         </div>
 
         <div id="hamburger-icon" class="hamburger-icon hide-desktop">
@@ -35,10 +35,10 @@
 
         <div class="nav-links hide-mobile">
           <a href="#">Home</a>
-          <a href="">page 1</a>
-          <a href="">page 2</a>
+          <a href="">Origin</a>
+          <a href="">Variations</a>
           <div class="dropdown">
-            <button class="dropdown-btn">Coffee</button>
+            <button class="dropdown-btn">Products</button>
             <div class="dropdown-content">
               <a href="" class="dropdown-item">Hot</a>
               <a href="" class="dropdown-item">Iced</a>
@@ -48,6 +48,30 @@
         </div>
       </nav>
     </header>
+
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu-items">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">p1</a>
+        </li>
+        <li>
+          <a href="#">p2</a>
+        </li>
+        <li>
+          <a href="#">Hot coffee</a>
+        </li>
+        <li>
+          <a href="#">Iced coffee</a>
+        </li> 
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
 
     <section id="banner">
         <h1 class="banner-title">All about Coffee</h1>
@@ -99,10 +123,14 @@
             </div>
           </section>
 
+          <hr>
+
           <section>
             <h2>Photos videos etc</h2>
             Photo's video's etc
           </section>
+
+          <hr>
 
           <section id="t">
             <h2 class="validator">Plaatjes</h2>
