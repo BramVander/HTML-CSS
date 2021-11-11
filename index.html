@@ -34,7 +34,7 @@
         </div>
 
         <div class="nav-links hide-mobile">
-          <a href="#">Home</a>
+          <a class="current-page" href="#">Home</a>
           <a href="">Origin</a>
           <a href="">Variations</a>
           <div class="dropdown">
@@ -44,7 +44,7 @@
               <a href="" class="dropdown-item">Iced</a>
             </div>
           </div>
-          <a href="#t">Contact</a>
+          <a href="#">Contact</a>
         </div>
       </nav>
     </header>
@@ -79,75 +79,132 @@
     </section>
 
     <div class="container-main">
-      <div class="main">
+      <div class="main-card">
         <main>
           <section>
             <h2 class="validator">Artikelen</h2>
-            <div class="container-grid">
+            <div class="article-grid">
               <article>
-                <h3>artikel 1</h3>
+                <h3>Origin Story</h3>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                  iusto aut esse harum officia vitae, magni velit nam ab
-                  similique ipsum earum adipisci corrupti, voluptatem est
-                  accusantium fugit non explicabo totam vel porro nihil? Facilis
-                  voluptatibus voluptate atque, minus nulla quod, eligendi unde
-                  dolore deserunt illo, error eaque porro modi? <a href="#">Lees meer</a>
+                  The story goes that that Kaldi discovered coffee after he noticed that after eating the berries from a certain tree, his goats became so energetic that they did not want to sleep at night. 
+                  Kaldi reported his findings to the abbot of the local monastery, who made a drink with the berries and found that it kept him alert through the long hours of evening prayer. The abbot shared his discovery with the other monks at the monastery, and knowledge of the energizing berries began to spread. As word moved east and coffee reached the Arabian peninsula, it began a journey which would bring these beans across the globe. <a href="./origin.html">Click to read more!</a>
                 </p>
-              </article>
+                </article>
 
               <article>
-                <h3>artikel 2</h3>
+                <h3>Most Populair Drink</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum, ut, tempore, sed porro temporibus ullam culpa eaque
-                  est nesciunt quo consequuntur nisi? Neque ratione ducimus cum
-                  maiores quaerat debitis rem distinctio praesentium totam. Iste
-                  asperiores dicta placeat veniam dolorum ipsum a explicabo
-                  accusamus totam? Sunt officiis laborum mollitia repellat
-                  magnam? <a href="#">Lees meer</a>
-                </p>              
-                
-                <article>
-                  <h3>artikel 3</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nostrum, ut, tempore, sed porro temporibus ullam culpa eaque
-                    est nesciunt quo consequuntur nisi? Neque ratione ducimus cum
-                    maiores quaerat debitis rem distinctio praesentium totam. Iste
-                    asperiores dicta placeat veniam dolorum ipsum a explicabo
-                    accusamus totam? Sunt officiis laborum mollitia repellat
-                    magnam? <a href="#">Lees meer</a>
-                  </p>
+                  Coffee is the second most consumed beverage in the world after water. Amazing isn't it? It seems that its name comes from the Arabic qahwa ("exciting"), then turn to the Turkish "kahve" then became "Italian coffee" or "coffee" in English. Some argue that the perola coffee derives from the word "Kaffa", the name of an Ethiopian province. 
+                  Coffee grown worldwide can trace its heritage back centuries to the ancient coffee forests on the Ethiopian plateau. There, legend says the goat herder Kaldi first discovered the potential of these beloved beans. Kaldi reported his findings to the abbot of the local monastery, who made a drink with the berries and found that it kept him alert through the long hours of evening prayer. Today, there are alot of different brews available. <a href="./products.html">Click to find out more!</a>
+                </p>
               </article>
+                </p>
+                </article>
             </div>
           </section>
 
           <hr>
 
           <section>
-            <h2>Photos videos etc</h2>
-            Photo's video's etc
+            <h2>Media Galery</h2>
+            <div class="photo-grid">
+              <div class="modal">
+                <div class="modal-content">
+                  <span class="close x">&times;</span>
+                  <img class="modal-img" src="/" alt="Modal img">
+                </div>
+              </div>
+
+              <picture class="parent parent-1">
+                <source media="(max-width:768px)" srcset="./img/photo1-heart-small.jpg">
+                <img class="item x" src="./img/photo1-heart.jpg" alt="Coffeebeans heart-shaped">
+              </picture>
+
+              <picture class="parent parent-2">
+                <source media="(max-width:768px)" srcset="./img/photo2-cup-small.jpg">
+                <img class="item x" src="./img/photo2-cup.jpg" alt="Cup on beans">
+              </picture>
+
+              <picture class="parent parent-3">
+                <source media="(max-width:768px)" srcset="./img/photo3-work-small.jpg">
+                <img class="item x" src="./img/photo3-work.jpg" alt="Coffee at work">
+              </picture>
+
+              <div class="parent parent-4">
+                <video class="item x" src="./video/cofee.mp4" controls></video>
+              </div>
+              
+              <div class="parent parent-5">
+                <iframe class="item" src="https://www.youtube-nocookie.com/embed/FM5_NoXW2Y0" title="YouTube video player" allow="accelerometer; autoplay; gyroscope;" allowfullscreen></iframe>
+              </div>
+            </div>
           </section>
 
           <hr>
-
-          <section id="t">
+          
+          <section>
             <h2 class="validator">Plaatjes</h2>
-            Plaatje
+            <div class="figure-grid">
+
+              <div class="figure-container">
+                <figure>
+                  <img src="./img/starbucks.jpg" alt="Famous brand" srcset="" />
+                  <figcaption>
+                    <h2>Different brands</h2>
+                    <p>
+                      One of the biggest and most famous coffeechains: <a href="https://www.starbucks.com/" target="_blank">Starbucks</a>.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="figure-container">
+                <figure class="reverse">
+                  <img src="./img/filter.jpg" alt="Brew methods" srcset="" />
+                  <figcaption>
+                    <h2>Brewing methods</h2>
+                    <p>
+                      Theres lots of ways to brew coffee. Here we see someone using the classic filter technique.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="figure-container">
+                <figure>
+                  <img src="./img/iced.jpg" alt="For summer and winter" srcset="" />
+                  <figcaption>
+                    <h2>Both hot & cold</h2>
+                    <p>
+                      While drinking hot is customary, iced coffee does exist and is very enjoyable!
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+
+            </div>
           </section>
         </main>
       </div>
     </div>
 
-    <script src="./js/script.js"></script>
-    <footer>2021 &copy; BramVander 
-      <img src="./img/icons/facebook.png" alt="" class="icon">
-      <a href="www.facebook.com" target="_blank">Facebook</a>
-      <img src="./img/icons/twitter.png" alt="" class="icon">
-      <a href="www.twitter.com" target="_blank">Twitter</a>
-      <img src="./img/icons/linkedin.png" alt="" class="icon">
-      <a href="www.linkedin.com" target="_blank">LinkedIn</a>
+    <footer>2021 &copy; BramVander
+      <div class="footer-socials">
+        <img src="./img/icons/facebook.png" alt="" class="icon">
+        <a href="www.facebook.com" target="_blank">Facebook</a>
+      </div>
+
+      <div class="footer-socials">
+        <img src="./img/icons/twitter.png" alt="" class="icon">
+        <a href="www.twitter.com" target="_blank">Twitter</a>
+      </div>
+
+      <div class="footer-socials">
+        <img src="./img/icons/linkedin.png" alt="" class="icon">
+        <a href="www.linkedin.com" target="_blank">LinkedIn</a>
+      </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

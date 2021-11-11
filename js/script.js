@@ -4,6 +4,10 @@ const mobileMenu = document.querySelector(".mobile-menu");
 const navLinks = document.querySelector(".nav-links");
 const overlay = document.querySelector(".overlay");
 const body = document.querySelector(".body");
+const photoGrid = document.querySelector(".photo-grid");
+
+const modal = document.querySelector(".modal");
+const modalImg = document.querySelector(".modal-img");
 
 // Logo click for homepage
 const goHome = function () {
@@ -31,4 +35,18 @@ navLinks.addEventListener("click", function (e) {
   // Travel to navlink
   const slug = e.target.getAttribute("href");
   window.location.href = `${slug}`;
+});
+
+// Modal toggle
+photoGrid.addEventListener("click", function (e) {
+  e.preventDefault();
+  let src = "";
+  // Check if clicked element is img or close btn with class x
+  if (!e.target.classList.contains("x")) return;
+  // Get correct modal img and toggle modal
+  if (e.target.getAttribute("src")) src = e.target.getAttribute("src");
+  modalImg.src = src;
+  modal.style.display === "block"
+    ? (modal.style.display = "none")
+    : (modal.style.display = "block");
 });
