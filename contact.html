@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Zen+Kurenaido"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dancing+Script"
+    />
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpRHHq_kLzIrlLGlrQXGt9PmzjjaLsD04&callback=initMap"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>All about Coffee</title>
+  </head>
+  <body class="body">
+    <h1 class="validator">Coffee</h1>
+    <header>
+      <nav>
+        <div class="logo-container" onclick="goHome()">
+          <img src="./img/icons/logo.png" alt="" class="icon logo" />
+          <h2>Coffee</h2>
+        </div>
+
+        <div id="hamburger-icon" class="hamburger-icon hide-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="nav-links hide-mobile">
+          <a href="/">Home</a>
+          <a href="./origin.html">Origin</a>
+          <a href="">Variations</a>
+          <div class="dropdown">
+            <button class="dropdown-btn">Products</button>
+            <div class="dropdown-content">
+              <a href="" class="dropdown-item">Hot</a>
+              <a href="" class="dropdown-item">Iced</a>
+            </div>
+          </div>
+          <a class="current-page" href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu-items">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="./origin.html">Origin</a>
+        </li>
+        <li>
+          <a href="#">Variations</a>
+        </li>
+        <li>
+          <a href="#">Hot coffee</a>
+        </li>
+        <li>
+          <a href="#">Iced coffee</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <section>
+      <h2 class="validator">Map</h2>
+      <div id="map"></div>
+    </section>
+
+    <div class="container-main">
+      <div class="main-card">
+        <main>
+          <div class="container-form">
+            <h2>Contact Bram Vander</h3>
+            <form
+              class="form"
+              action="https://jkorpela.fi/cgi-bin/echo.cgi"
+              method="post"
+            >
+            <!-- Pattern allows only letters, spaces, dash. -->
+              <label for="fullname"> <strong>Full name</strong>  [required] </label>
+              <input class="form-field" placeholder="Mary-Jane Parker" type="text" id="fullname" name="fullname" required />
+              <!-- Pattern for email -->
+              <label for="email"><strong>Email</strong> [required] </label>
+              <input class="form-field" placeholder="Example@email.com" type="text" id="email" name="email" required />
+              <!-- Pattern allows only numbers, dash -->
+              <label for="telephone"><strong>Telephone</strong> </label>
+              <input class="form-field" placeholder="06-12345678" type="text" id="telephone" name="telephone" />
+              <!-- Pattern allows letters, numbers, spaces, special chars -->
+              <label for="question"><strong>Your question</strong></label>
+              <textarea class="form-field" placeholder="Why is coffee so good?" name="question" id="question" required></textarea>
+
+              <input class="submit" type="submit" value="Ask a question" />
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer>
+      2021 &copy; BramVander
+      <div class="footer-socials">
+        <img src="./img/icons/facebook.png" alt="" class="icon" />
+        <a href="www.facebook.com" target="_blank">Facebook</a>
+      </div>
+
+      <div class="footer-socials">
+        <img src="./img/icons/twitter.png" alt="" class="icon" />
+        <a href="www.twitter.com" target="_blank">Twitter</a>
+      </div>
+
+      <div class="footer-socials">
+        <img src="./img/icons/linkedin.png" alt="" class="icon" />
+        <a href="www.linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

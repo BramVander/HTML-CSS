@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
     />
@@ -20,11 +24,12 @@
     <title>All about Coffee</title>
   </head>
   <body class="body">
+    <h1 class="validator">Coffee</h1>
     <header>
       <nav>
         <div class="logo-container" onclick="goHome()">
-          <img src="./img/icons/logo.png" alt="" class="icon logo">
-          <h2>Coffee</p>
+          <img src="./img/icons/logo.png" alt="" class="icon logo" />
+          <h2>Coffee</h2>
         </div>
 
         <div id="hamburger-icon" class="hamburger-icon hide-desktop">
@@ -34,8 +39,8 @@
         </div>
 
         <div class="nav-links hide-mobile">
-          <a class="current-page" href="#">Home</a>
-          <a href="">Origin</a>
+          <a class="current-page" href="/">Home</a>
+          <a href="./origin.html">Origin</a>
           <a href="">Variations</a>
           <div class="dropdown">
             <button class="dropdown-btn">Products</button>
@@ -44,7 +49,7 @@
               <a href="" class="dropdown-item">Iced</a>
             </div>
           </div>
-          <a href="#">Contact</a>
+          <a href="./contact.html">Contact</a>
         </div>
       </nav>
     </header>
@@ -53,29 +58,29 @@
     <div class="mobile-menu">
       <ul class="mobile-menu-items">
         <li>
-          <a href="#">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="#">p1</a>
+          <a href="./origin.html">Origin</a>
         </li>
         <li>
-          <a href="#">p2</a>
+          <a href="#">Variations</a>
         </li>
         <li>
           <a href="#">Hot coffee</a>
         </li>
         <li>
           <a href="#">Iced coffee</a>
-        </li> 
+        </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="/contact.html">Contact</a>
         </li>
       </ul>
     </div>
 
     <section id="banner">
-        <h1 class="banner-title">All about Coffee</h1>
-        <h2 class="banner-title">The best beverage</h2>
+      <h2 class="banner-title">All about Coffee</h2>
+      <h3 class="banner-title">The #1 beverage</h3>
     </section>
 
     <div class="container-main">
@@ -87,24 +92,44 @@
               <article>
                 <h3>Origin Story</h3>
                 <p>
-                  The story goes that that Kaldi discovered coffee after he noticed that after eating the berries from a certain tree, his goats became so energetic that they did not want to sleep at night. 
-                  Kaldi reported his findings to the abbot of the local monastery, who made a drink with the berries and found that it kept him alert through the long hours of evening prayer. The abbot shared his discovery with the other monks at the monastery, and knowledge of the energizing berries began to spread. As word moved east and coffee reached the Arabian peninsula, it began a journey which would bring these beans across the globe. <a href="./origin.html">Click to read more!</a>
+                  The story goes that that Kaldi discovered coffee after he
+                  noticed that after eating the berries from a certain tree, his
+                  goats became so energetic that they did not want to sleep at
+                  night. Kaldi reported his findings to the abbot of the local
+                  monastery, who made a drink with the berries and found that it
+                  kept him alert through the long hours of evening prayer. The
+                  abbot shared his discovery with the other monks at the
+                  monastery, and knowledge of the energizing berries began to
+                  spread. As word moved east and coffee reached the Arabian
+                  peninsula, it began a journey which would bring these beans
+                  across the globe...
+                  <a href="./origin.html">Click to read more stories!</a>
                 </p>
-                </article>
+              </article>
 
               <article>
                 <h3>Most Populair Drink</h3>
                 <p>
-                  Coffee is the second most consumed beverage in the world after water. Amazing isn't it? It seems that its name comes from the Arabic qahwa ("exciting"), then turn to the Turkish "kahve" then became "Italian coffee" or "coffee" in English. Some argue that the perola coffee derives from the word "Kaffa", the name of an Ethiopian province. 
-                  Coffee grown worldwide can trace its heritage back centuries to the ancient coffee forests on the Ethiopian plateau. There, legend says the goat herder Kaldi first discovered the potential of these beloved beans. Kaldi reported his findings to the abbot of the local monastery, who made a drink with the berries and found that it kept him alert through the long hours of evening prayer. Today, there are alot of different brews available. <a href="./products.html">Click to find out more!</a>
+                  Coffee is the second most consumed beverage in the world after
+                  water. Amazing isn't it? It seems that its name comes from the
+                  Arabic qahwa ("exciting"), then turn to the Turkish "kahve"
+                  then became "Italian coffee" or "coffee" in English. Some
+                  argue that the perola coffee derives from the word "Kaffa",
+                  the name of an Ethiopian province. Coffee grown worldwide can
+                  trace its heritage back centuries to the ancient coffee
+                  forests on the Ethiopian plateau. There, legend says the goat
+                  herder Kaldi first discovered the potential of these beloved
+                  beans. Kaldi reported his findings to the abbot of the local
+                  monastery, who made a drink with the berries and found that it
+                  kept him alert through the long hours of evening prayer.
+                  Today, there are alot of different brews available.
+                  <a href="./products.html">Click to find out more!</a>
                 </p>
               </article>
-                </p>
-                </article>
             </div>
           </section>
 
-          <hr>
+          <hr />
 
           <section>
             <h2>Media Galery</h2>
@@ -112,48 +137,78 @@
               <div class="modal">
                 <div class="modal-content">
                   <span class="close x">&times;</span>
-                  <img class="modal-img" src="/" alt="Modal img">
+                  <img class="modal-img" src="/" alt="Modal img" />
                 </div>
               </div>
 
               <picture class="parent parent-1">
-                <source media="(max-width:768px)" srcset="./img/photo1-heart-small.jpg">
-                <img class="item x" src="./img/photo1-heart.jpg" alt="Coffeebeans heart-shaped">
+                <source
+                  media="(max-width:768px)"
+                  srcset="./img/photo1-heart-small.jpg"
+                />
+                <img
+                  class="item x"
+                  src="./img/photo1-heart.jpg"
+                  alt="Coffeebeans heart-shaped"
+                />
               </picture>
 
               <picture class="parent parent-2">
-                <source media="(max-width:768px)" srcset="./img/photo2-cup-small.jpg">
-                <img class="item x" src="./img/photo2-cup.jpg" alt="Cup on beans">
+                <source
+                  media="(max-width:768px)"
+                  srcset="./img/photo2-cup-small.jpg"
+                />
+                <img
+                  class="item x"
+                  src="./img/photo2-cup.jpg"
+                  alt="Cup on beans"
+                />
               </picture>
 
               <picture class="parent parent-3">
-                <source media="(max-width:768px)" srcset="./img/photo3-work-small.jpg">
-                <img class="item x" src="./img/photo3-work.jpg" alt="Coffee at work">
+                <source
+                  media="(max-width:768px)"
+                  srcset="./img/photo3-work-small.jpg"
+                />
+                <img
+                  class="item x"
+                  src="./img/photo3-work.jpg"
+                  alt="Coffee at work"
+                />
               </picture>
 
               <div class="parent parent-4">
                 <video class="item x" src="./video/cofee.mp4" controls></video>
               </div>
-              
+
               <div class="parent parent-5">
-                <iframe class="item" src="https://www.youtube-nocookie.com/embed/FM5_NoXW2Y0" title="YouTube video player" allow="accelerometer; autoplay; gyroscope;" allowfullscreen></iframe>
+                <iframe
+                  class="item"
+                  src="https://www.youtube-nocookie.com/embed/FM5_NoXW2Y0"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; gyroscope;"
+                  allowfullscreen
+                ></iframe>
               </div>
             </div>
           </section>
 
-          <hr>
-          
+          <hr />
+
           <section>
             <h2 class="validator">Plaatjes</h2>
             <div class="figure-grid">
-
               <div class="figure-container">
                 <figure>
-                  <img src="./img/starbucks.jpg" alt="Famous brand" srcset="" />
+                  <img src="./img/starbucks.jpg" alt="Famous brand" />
                   <figcaption>
                     <h2>Different brands</h2>
                     <p>
-                      One of the biggest and most famous coffeechains: <a href="https://www.starbucks.com/" target="_blank">Starbucks</a>.
+                      Probably the biggest and most famous coffeeshop is run by
+                      <a href="https://www.starbucks.com/" target="_blank"
+                        >Starbucks</a
+                      >. Surprisingly, not owned by one of the famous coffee
+                      countries.
                     </p>
                   </figcaption>
                 </figure>
@@ -161,11 +216,13 @@
 
               <div class="figure-container">
                 <figure class="reverse">
-                  <img src="./img/filter.jpg" alt="Brew methods" srcset="" />
+                  <img src="./img/filter.jpg" alt="Brew methods" />
                   <figcaption>
                     <h2>Brewing methods</h2>
                     <p>
-                      Theres lots of ways to brew coffee. Here we see someone using the classic filter technique.
+                      Theres lots of ways to brew coffee. Here we see someone
+                      using the classic filter technique: pooring hot water
+                      through ground coffee.
                     </p>
                   </figcaption>
                 </figure>
@@ -173,35 +230,36 @@
 
               <div class="figure-container">
                 <figure>
-                  <img src="./img/iced.jpg" alt="For summer and winter" srcset="" />
+                  <img src="./img/iced.jpg" alt="For summer and winter" />
                   <figcaption>
-                    <h2>Both hot & cold</h2>
+                    <h2>Hot & cold</h2>
                     <p>
-                      While drinking hot is customary, iced coffee does exist and is very enjoyable!
+                      While drinking hot is customary, iced coffee does exist
+                      and is very enjoyable. Especially during the warmer days.
                     </p>
                   </figcaption>
                 </figure>
               </div>
-
             </div>
           </section>
         </main>
       </div>
     </div>
 
-    <footer>2021 &copy; BramVander
+    <footer>
+      2021 &copy; BramVander
       <div class="footer-socials">
-        <img src="./img/icons/facebook.png" alt="" class="icon">
+        <img src="./img/icons/facebook.png" alt="" class="icon" />
         <a href="www.facebook.com" target="_blank">Facebook</a>
       </div>
 
       <div class="footer-socials">
-        <img src="./img/icons/twitter.png" alt="" class="icon">
+        <img src="./img/icons/twitter.png" alt="" class="icon" />
         <a href="www.twitter.com" target="_blank">Twitter</a>
       </div>
 
       <div class="footer-socials">
-        <img src="./img/icons/linkedin.png" alt="" class="icon">
+        <img src="./img/icons/linkedin.png" alt="" class="icon" />
         <a href="www.linkedin.com" target="_blank">LinkedIn</a>
       </div>
     </footer>

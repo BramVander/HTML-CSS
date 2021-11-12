@@ -6,6 +6,7 @@
   --links: blue;
   --text: black;
   --navbar: gold;
+  --coffee: tan;
   --font: "Source Code Pro";
   --title: "Dancing Script";
   --caption: "Zen Kurenaido";
@@ -61,16 +62,23 @@ nav {
   background-color: var(--navbar);
 }
 
-nav div:hover {
+nav div {
+  cursor: pointer;
+}
+
+button {
   cursor: pointer;
 }
 
 nav div h2 {
   margin: 0;
   padding: 0;
+  text-shadow: 5px 5px 5px;
 }
 
+/* /////////// */
 /* Logo & Text */
+/* /////////// */
 .logo-container {
   display: flex;
   flex-direction: column;
@@ -81,7 +89,9 @@ nav div h2 {
   position: relative;
 }
 
+/* ///////// */
 /* Hamburger */
+/* ///////// */
 .hamburger-icon {
   position: absolute;
   right: 1rem;
@@ -149,9 +159,9 @@ nav div h2 {
 /* ///////////////////// */
 
 .overlay {
-  display: none;
   position: absolute;
-  top: 340px;
+  height: 1px;
+  top: 316px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -160,6 +170,7 @@ nav div h2 {
 }
 
 .overlay.open {
+  height: 100%;
   opacity: 0.9;
   transition: opacity 200ms ease-in-out;
 }
@@ -204,7 +215,9 @@ li {
   margin-block-end: 1rem;
 }
 
+/* /////////// */
 /* Nav submenu */
+/* /////////// */
 .sub-nav {
   border: none;
   color: var(--gray);
@@ -217,7 +230,9 @@ li {
   cursor: pointer;
 }
 
+/* //////////////// */
 /* Navigation links */
+/* //////////////// */
 .nav-links a {
   color: var(--gray);
 }
@@ -331,7 +346,9 @@ li {
   margin: 0 !important;
 }
 
+/* /////////// */
 /* Active link */
+/* /////////// */
 .current-page {
   color: black !important;
 }
@@ -348,11 +365,12 @@ footer {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: var(--white);
+  background-color: black;
   border-block-start: 1px solid black;
   justify-content: space-between;
   align-items: center;
   font-size: 0.8em;
+  color: var(--white);
 }
 
 .footer-socials {
@@ -362,6 +380,7 @@ footer {
 
 .footer-socials a {
   margin-inline-start: 1rem;
+  color: var(--white);
 }
 
 .icon {
@@ -444,7 +463,9 @@ hr {
   transition: transform 300ms ease-in-out;
 }
 
+/* ///////////// */
 /* Modal for img */
+/* ///////////// */
 .modal {
   width: 100%;
   height: 100%;
@@ -459,7 +480,9 @@ hr {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+/* ///////////// */
 /* Modal content */
+/* ///////////// */
 .modal-content {
   margin: auto;
   background-color: #fefefe;
@@ -468,7 +491,9 @@ hr {
   width: 80%;
 }
 
+/* ///////////// */
 /* Close Button */
+/* ///////////// */
 .close {
   color: #aaaaaa;
   float: right;
@@ -495,7 +520,9 @@ hr {
   display: block;
 }
 
+/* ///////////////////////// */
 /* Pointer to indicate modal */
+/* ///////////////////////// */
 .parent:hover {
   cursor: pointer;
 }
@@ -511,7 +538,7 @@ hr {
 }
 
 figure {
-  background-color: tan;
+  background-color: var(--coffee);
   border-radius: 5px;
   box-shadow: 10px 10px 10px gray;
 }
@@ -529,9 +556,113 @@ figure img {
 }
 
 figcaption {
+  font-family: var(--caption);
   padding: 1rem;
 }
 
 figcaption h2 {
   margin-block-start: 0;
+}
+
+/* /////////// */
+/* Origin page */
+/* /////////// */
+.button {
+  width: 140px;
+  display: flex;
+  padding: 0.5rem;
+  background-color: transparent;
+  color: #772f1a;
+  font-family: var(--font);
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: 2px solid #772f1a;
+  transition: color 300ms ease-in-out;
+  margin-block-start: auto;
+  align-items: center;
+}
+
+.button:hover {
+  color: var(--white);
+  background-color: #772f1a;
+}
+
+.btn-icon {
+  margin-inline-start: 5px;
+}
+
+/* ///////////////// */
+/* Origin story page */
+/* ///////////////// */
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+q {
+  margin-block-start: 1rem;
+  margin-block-end: 2rem;
+}
+
+table {
+  width: 100%;
+}
+
+table tr th {
+  background-color: cornflowerblue;
+  text-align: left;
+}
+
+tr td {
+  background-color: var(--coffee);
+}
+
+tr td:last-child {
+  width: 10%;
+  background-color: var(--coffee);
+}
+
+tr th:nth-child(2),
+tr td:nth-child(2) {
+  display: none;
+}
+
+/* //////////// */
+/* Contact page */
+/* //////////// */
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  padding: 0.5rem;
+}
+
+.form-field:focus {
+  color: white;
+  background-color: var(--coffee);
+}
+
+textarea {
+  height: 10rem;
+}
+
+.submit {
+  padding: 0.5rem;
+  margin-block-start: 1rem;
+  border-radius: 15px;
 }

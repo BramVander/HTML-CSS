@@ -1,4 +1,4 @@
-/* Media queries */
+/* Media query classes */
 .hide-mobile {
   display: none;
 }
@@ -7,7 +7,9 @@
   display: inline;
 }
 
+/* ////////////////// */
 /* Queries for tablet */
+/* ////////////////// */
 @media (min-width: 768px) {
   /* Set img size for banner */
   #banner {
@@ -89,6 +91,11 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
   }
+
+  tr th:nth-child(2),
+  tr td:nth-child(2) {
+    display: table-cell;
+  }
 }
 
 /* Queries for desktop */
@@ -156,13 +163,24 @@
     padding: 1rem;
     border-radius: 20px;
   }
+
+  .story-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 2rem;
+  }
 }
 
 /* Queries for big screens */
 @media (min-width: 1440px) {
   body {
-    line-height: 3rem;
-    font-size: 2rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .dropdown-btn {
+    line-height: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .main-card {
@@ -170,7 +188,8 @@
   }
 
   /* button doesn't inherit */
-  button {
+  .button {
+    min-width: 261px;
     font-size: 2rem !important;
   }
 
@@ -181,5 +200,9 @@
   /* Not allowed to scale beyond siblings */
   .parent-5 {
     max-height: 81px;
+  }
+
+  blockquote {
+    font-size: 1.5rem;
   }
 }
