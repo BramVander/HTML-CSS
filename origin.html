@@ -39,7 +39,7 @@
         </div>
 
         <div class="nav-links hide-mobile">
-          <a href="/">Home</a>
+          <a href="index.html">Home</a>
           <a class="current-page" href="./origin.html">Origin</a>
           <a href="">Variations</a>
           <div class="dropdown">
@@ -58,7 +58,7 @@
     <div class="mobile-menu">
       <ul class="mobile-menu-items">
         <li>
-          <a href="/">Home</a>
+          <a href="index.html">Home</a>
         </li>
         <li>
           <a href="./origin.html">Origin</a>
@@ -98,7 +98,7 @@
                 <td>An Ethiopian Legend</td>
                 <td>First Brew</td>
                 <td>
-                  <a href="#ethiopian">
+                  <a onclick="clickedStory(this.href.slice(-1))" href="#1">
                     <i class="material-icons"> forward </i>
                   </a>
                 </td>
@@ -107,7 +107,7 @@
                 <td>Arabian Peninsula</td>
                 <td>Rise of Coffeehouses</td>
                 <td>
-                  <a href="#arabian">
+                  <a onclick="clickedStory(this.href.slice(-1))" href="#2">
                     <i class="material-icons"> forward </i>
                   </a>
                 </td>
@@ -116,7 +116,7 @@
                 <td>Coffee Comes to Europe</td>
                 <td>The Spread to Europe</td>
                 <td>
-                  <a href="#europe">
+                  <a onclick="clickedStory(this.href.slice(-1))" href="#3">
                     <i class="material-icons"> forward </i>
                   </a>
                 </td>
@@ -125,7 +125,7 @@
                 <td>Gaining popularity</td>
                 <td>Introduction to the Office</td>
                 <td>
-                  <a href="#popularity">
+                  <a onclick="clickedStory(this.href.slice(-1))" href="#4">
                     <i class="material-icons"> forward </i>
                   </a>
                 </td>
@@ -134,7 +134,7 @@
                 <td>The New World</td>
                 <td>The Boston Tea Party</td>
                 <td>
-                  <a href="#newWorld">
+                  <a onclick="clickedStory(this.href.slice(-1))" href="#5">
                     <i class="material-icons"> forward </i>
                   </a>
                 </td>
@@ -143,7 +143,7 @@
                 <td>Plantations Around the World</td>
                 <td>Dutch Cultivation</td>
                 <td>
-                  <a href="#plantations">
+                  <a onclick="clickedStory(this.href.slice(-1))" href="#6">
                     <i class="material-icons"> forward </i>
                   </a>
                 </td>
@@ -152,7 +152,7 @@
                 <td>Coming to the Americas</td>
                 <td>Journey to America</td>
                 <td>
-                  <a href="#americas">
+                  <a onclick="clickedStory(this.href.slice(-1))" href="#7">
                     <i class="material-icons"> forward </i>
                   </a>
                 </td>
@@ -161,7 +161,7 @@
                 <td>Coffee for France</td>
                 <td>Last but not Least</td>
                 <td>
-                  <a href="#france">
+                  <a onclick="clickedStory(this.href.slice(-1))" href="#8">
                     <i class="material-icons"> forward </i>
                   </a>
                 </td>
@@ -171,7 +171,7 @@
 
           <section class="story-grid">
             <h2 class="validator">Stories</h2>
-            <article id="ethiopian" class="story">
+            <article id="1" class="story">
               <h2>An Ethiopian Legend</h2>
               <p>
                 Coffee grown worldwide can trace its heritage back centuries to
@@ -199,7 +199,7 @@
               </button>
             </article>
 
-            <article id="arabian" class="story">
+            <article id="2" class="story">
               <h2>The Arabian Peninsula</h2>
               <p>
                 Coffee cultivation and trade began on the Arabian Peninsula. By
@@ -229,7 +229,7 @@
               </button>
             </article>
 
-            <article id="europe" class="story">
+            <article id="3" class="story">
               <h2>Coffee Comes to Europe</h2>
               <p>
                 European travelers to the Near East brought back stories of an
@@ -262,7 +262,7 @@
               </button>
             </article>
 
-            <article id="popularity" class="story">
+            <article id="4" class="story">
               <h2>Gaining popularity</h2>
               <p>
                 Coffee began to replace the common breakfast drink beverages of
@@ -285,7 +285,7 @@
               </button>
             </article>
 
-            <article id="newWorld" class="story">
+            <article id="5" class="story">
               <h2>The New World</h2>
               <p>
                 In the mid-1600's, coffee was brought to New Amsterdam, later
@@ -308,7 +308,7 @@
               </button>
             </article>
 
-            <article id="plantations" class="story">
+            <article id="6" class="story">
               <h2>Plantations Around the World</h2>
               <p>
                 As demand for the beverage continued to spread, there was fierce
@@ -329,7 +329,7 @@
               </button>
             </article>
 
-            <article id="americas" class="story">
+            <article id="7" class="story">
               <h2>Coming to the Americas</h2>
               <p>
                 In 1714, the Mayor of Amsterdam presented a gift of a young
@@ -355,7 +355,7 @@
               </button>
             </article>
 
-            <article id="france" class="story">
+            <article id="8" class="story">
               <h2>Coffee for France</h2>
               <p>
                 The famed Brazilian coffee owes its existence to Francisco de

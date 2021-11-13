@@ -75,3 +75,14 @@ if (photoGrid) {
       : (modal.style.display = "block");
   });
 }
+
+// Highlight clicked story
+const clickedStory = function (article_id) {
+  console.log("click", article_id);
+  const article = document.getElementById(article_id);
+  console.log(article);
+  article.classList.toggle("highlight");
+  setTimeout(function () {
+    article.classList.toggle("highlight");
+  }, 4000);
+};

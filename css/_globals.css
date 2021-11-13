@@ -607,6 +607,26 @@ figcaption h2 {
   position: relative;
 }
 
+.highlight {
+  animation-name: highlight;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes highlight {
+  from {
+    background-color: var(--white);
+  }
+  50% {
+    background-color: var(--coffee);
+  }
+  to {
+    background-color: var(--white);
+  }
+}
+
 q {
   margin-block-start: 1rem;
   margin-block-end: 2rem;
