@@ -365,12 +365,12 @@ footer {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: var(--navbar);
   border-block-start: 1px solid black;
   justify-content: space-between;
   align-items: center;
   font-size: 0.8em;
-  color: var(--white);
+  color: black;
 }
 
 .footer-socials {
@@ -380,12 +380,13 @@ footer {
 
 .footer-socials a {
   margin-inline-start: 1rem;
-  color: var(--white);
+  color: black;
 }
 
 .icon {
   width: 20px;
   height: 20px;
+  border-radius: 2px;
 }
 /* ////// */
 /* Banner */
@@ -607,10 +608,11 @@ figcaption h2 {
   position: relative;
 }
 
+/* Highlight the clicked article */
 .highlight {
   animation-name: highlight;
-  animation-duration: 1s;
-  animation-iteration-count: 2;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
