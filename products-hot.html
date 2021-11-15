@@ -20,12 +20,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Dancing+Script"
     />
-    <script
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpRHHq_kLzIrlLGlrQXGt9PmzjjaLsD04&callback=initMap"
-    ></script>
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Contact</title>
+    <title>Hot Coffee</title>
   </head>
   <body class="body">
     <h1 class="validator">Coffee</h1>
@@ -47,13 +43,13 @@
           <a href="./origin.html">Origin</a>
           <a href="">Variations</a>
           <div class="dropdown">
-            <button class="dropdown-btn">Products</button>
+            <button class="dropdown-btn current-page">Products</button>
             <div class="dropdown-content">
               <a href="./products-hot.html" class="dropdown-item">Hot</a>
               <a href="./products-iced.html" class="dropdown-item">Iced</a>
             </div>
           </div>
-          <a class="current-page" href="./contact.html">Contact</a>
+          <a href="./contact.html">Contact</a>
         </div>
       </nav>
     </header>
@@ -62,7 +58,7 @@
     <div class="mobile-menu">
       <ul class="mobile-menu-items">
         <li>
-          <a href="./index.html">Home</a>
+          <a href="index.html">Home</a>
         </li>
         <li>
           <a href="./origin.html">Origin</a>
@@ -82,84 +78,102 @@
       </ul>
     </div>
 
-    <section>
-      <h2 class="validator">Map</h2>
-      <div id="map"></div>
+    <section id="banner">
+      <h2 class="banner-title">All about Coffee</h2>
+      <h3 class="banner-title">The #1 beverage</h3>
     </section>
 
     <div class="container-main">
       <div class="main-card">
         <main>
-          <div class="container-form">
-            <form
-              class="form"
-              action="https://jkorpela.fi/cgi-bin/echo.cgi"
-              method="post"
-            >
-              <h2>Contact Bram Vander</h2>
-              <!-- Pattern allows only letters, spaces, dash. -->
-              <label for="fullname">
-                <strong>Full name</strong> [required]
-              </label>
-              <input
-                class="form-field"
-                placeholder="Mary-Jane Parker"
-                type="text"
-                id="fullname"
-                name="fullname"
-                required
-              />
-              <!-- Pattern for email -->
-              <label for="email"><strong>Email</strong> [required] </label>
-              <input
-                class="form-field"
-                placeholder="Example@email.com"
-                type="text"
-                id="email"
-                name="email"
-                required
-              />
-              <!-- Pattern allows only numbers, dash -->
-              <label for="telephone"><strong>Telephone</strong> </label>
-              <input
-                class="form-field"
-                placeholder="06-12345678"
-                type="text"
-                id="telephone"
-                name="telephone"
-              />
-              <!-- Pattern allows letters, numbers, spaces, special chars -->
-              <label for="question"
-                ><strong>Your question</strong> [required]</label
-              >
-              <textarea
-                class="form-field"
-                placeholder="Why is coffee so good?"
-                name="question"
-                id="question"
-                required
-              ></textarea>
-              <input class="button" type="submit" value="Ask a question" />
-            </form>
+          <section>
+            <h2>Intro</h2>
+            <p>
+              Here you can find our menu. In the future you should be able to
+              order our products, for the time being you will to come join us
+              for a drink!
+            </p>
+          </section>
 
-            <div class="container-hours">
-              <h2>Opening Hours</h2>
-              <dl>
-                <dt>Monday</dt>
-                <dd>Closed</dd>
-                <dt>Tuesday</dt>
-                <dd>11:00 - 16:00</dd>
-                <dt>Wednesday</dt>
-                <dd>11:00 - 16:00</dd>
-                <dt>Thursday</dt>
-                <dd>11:00 - 16:00</dd>
-                <dt>Friday</dt>
-                <dd>11:00 - 16:00</dd>
-                <dt>Weekend</dt>
-                <dd>10:00 - 17:00</dd>
-              </dl>
+          <section class="product-grid">
+            <div class="card">
+              <img
+                class="card-img"
+                src="./img/coffee-small.jpg"
+                srtcset="./img/small.jpg 2x"
+                alt="Iced Coffee"
+              />
+              <div class="card-text">
+                <h2>Regular Coffee</h2>
+                <p>Price: &euro;1.50</p>
+              </div>
             </div>
-          </div>
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="./img/americano-small.jpg"
+                srtcset="./img/americano.jpg 2x"
+                alt="Iced Coffee"
+              />
+              <div class="card-text">
+                <h2>Americano</h2>
+                <p>Price: &euro;1.50</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="./img/espresso-small.jpg"
+                srtcset="./img/espresso.jpg 2x"
+                alt="Iced Coffee"
+              />
+              <div class="card-text">
+                <h2>Espresso</h2>
+                <p>Price: &euro;1.50</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="./img/latte-small.jpg"
+                srtcset="./img/latte.jpg 2x"
+                alt="Iced Coffee"
+              />
+              <div class="card-text">
+                <h2>Latt&#233;</h2>
+                <p>Price: &euro;2-</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="./img/machhiato-small.jpg"
+                srtcset="./img/machhiato.jpg 2x"
+                alt="Iced Coffee"
+              />
+              <div class="card-text">
+                <h2>Macchiato</h2>
+                <p>Price: &euro;2-</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="./img/cappuccino-small.jpg"
+                srtcset="./img/cappuccino.jpg 2x"
+                alt="Iced Coffee"
+              />
+              <div class="card-text">
+                <h2>Cappuccino</h2>
+                <p>Price: &euro;2-</p>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
     </div>

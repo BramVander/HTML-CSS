@@ -46,19 +46,18 @@ hamburger.addEventListener("click", function () {
 });
 
 // Toggle class for current nav link
-navLinks.addEventListener("click", function (e) {
-  e.preventDefault();
-  const active = document.querySelector(".current-page");
-  if (active) active.classList.remove("current-page");
-  e.target.classList.add("current-page");
+// navLinks.addEventListener("click", function (e) {
+//   e.preventDefault();
+//   // Prevent click on parent
+//   if (!e.target.getAttribute("href")) return;
+//   const active = document.querySelector(".current-page");
+//   if (active) active.classList.remove("current-page");
+//   e.target.classList.add("current-page");
 
-  // Prevent click on parent
-  if (!e.target.getAttribute("href")) return;
-
-  // Travel to navlink
-  const slug = e.target.getAttribute("href");
-  window.location.href = `${slug}`;
-});
+//   // Travel to navlink
+//   const slug = e.target.getAttribute("href");
+//   window.location.href = slug;
+// });
 
 // Modal toggle
 if (photoGrid) {
@@ -80,7 +79,7 @@ if (photoGrid) {
 const clickedStory = function (article_id) {
   console.log("click", article_id);
   const article = document.getElementById(article_id);
-  console.log(article);
+  if (!article) return;
   article.classList.toggle("highlight");
   setTimeout(function () {
     article.classList.toggle("highlight");

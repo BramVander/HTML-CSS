@@ -66,10 +66,6 @@ nav div {
   cursor: pointer;
 }
 
-button {
-  cursor: pointer;
-}
-
 nav div h2 {
   margin: 0;
   padding: 0;
@@ -397,7 +393,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightgreen;
   background-image: url("../img/bean-mobile.jpg");
   background-size: cover;
   background-position: center;
@@ -566,22 +561,24 @@ figcaption h2 {
 }
 
 /* /////////// */
-/* Origin page */
+/* Origin stories page */
 /* /////////// */
 .button {
-  width: 140px;
-  display: flex;
+  width: fit-content;
   padding: 0.5rem;
+  margin-block-start: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   color: #772f1a;
   font-family: var(--font);
   font-weight: 500;
   text-transform: uppercase;
-  border-radius: 20px;
   border: 2px solid #772f1a;
+  border-radius: 20px;
   transition: color 300ms ease-in-out;
-  margin-block-start: auto;
-  align-items: center;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -611,12 +608,13 @@ figcaption h2 {
 /* Highlight the clicked article */
 .highlight {
   animation-name: highlight;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
 
+/* Highlight animation */
 @keyframes highlight {
   from {
     background-color: var(--white);
@@ -665,6 +663,13 @@ tr td:nth-child(2) {
   height: 500px;
 }
 
+.container-form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-content: space-between;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -681,10 +686,40 @@ tr td:nth-child(2) {
 
 textarea {
   height: 10rem;
+  margin-block-end: 1rem;
 }
 
-.submit {
-  padding: 0.5rem;
-  margin-block-start: 1rem;
-  border-radius: 15px;
+/* ///////////// */
+/* Products page */
+/* ///////////// */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  padding: 1rem;
+}
+
+.card {
+  border: 1px solid brown;
+  box-shadow: 5px 5px 5px gray;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.card-img {
+  width: 200px;
+  max-height: 100px;
+}
+
+.card-text {
+  text-align: center;
+  font: var(--caption) !;
+}
+
+.card-text > p {
+  font-family: var(--caption);
+  font-weight: 700;
+  color: brown !important;
 }

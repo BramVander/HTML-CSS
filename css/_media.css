@@ -96,6 +96,17 @@
   tr td:nth-child(2) {
     display: table-cell;
   }
+
+  .container-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    column-gap: 11rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Queries for desktop */
@@ -169,6 +180,10 @@
     grid-template-rows: repeat(3, auto);
     grid-gap: 2rem;
   }
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Queries for big screens */
@@ -189,7 +204,6 @@
 
   /* button doesn't inherit */
   .button {
-    min-width: 261px;
     font-size: 2rem !important;
   }
 
@@ -204,5 +218,9 @@
 
   blockquote {
     font-size: 1.5rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
