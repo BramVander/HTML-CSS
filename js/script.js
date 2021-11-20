@@ -7,6 +7,8 @@ const body = document.querySelector(".body");
 const photoGrid = document.querySelector(".photo-grid");
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modal-img");
+const hotList = document.querySelector(".hot-list");
+const galleryImg = document.querySelector(".gallery-img");
 
 // Initialize and add the map
 function initMap() {
@@ -85,3 +87,13 @@ const clickedStory = function (article_id) {
     article.classList.toggle("highlight");
   }, 4000);
 };
+
+// Set img for product gallery
+if (hotList) {
+  hotList.addEventListener("mouseover", function (e) {
+    // Guard clause for (mis)click on parent
+    if (e.target.classList.contains("hot-list")) return;
+    let target = e.target.dataset.img;
+    galleryImg.src = `../img/${target}.jpg`;
+  });
+}

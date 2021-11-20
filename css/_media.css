@@ -67,7 +67,9 @@
     background-color: rgb(248, 248, 248);
   }
 
+  /* /////// */
   /* Figures */
+  /* /////// */
   figure {
     display: flex;
     flex-direction: row;
@@ -107,6 +109,21 @@
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .img-1,
+  .img-2,
+  .img-3,
+  .img-4,
+  .img-5 {
+    display: block;
+    height: auto;
+  }
 }
 
 /* Queries for desktop */
@@ -145,7 +162,11 @@
   .parent-5 {
     grid-row: 1;
     grid-column: 5;
-    max-height: 81px;
+  }
+
+  .item {
+    width: 100%;
+    max-height: 120px;
   }
 
   .figure-grid {
@@ -171,6 +192,7 @@
 
   figure img {
     max-width: 100%;
+    width: 100%;
     padding: 1rem;
     border-radius: 20px;
   }

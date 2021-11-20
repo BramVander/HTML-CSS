@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Zen+Kurenaido"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dancing+Script"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Our Coffee</title>
+  </head>
+  <body class="body">
+    <h1 class="validator">Coffee</h1>
+    <header>
+      <nav>
+        <div class="logo-container" onclick="goHome()">
+          <img src="./img/icons/logo.png" alt="" class="icon logo" />
+          <h2>Coffee</h2>
+        </div>
+
+        <div id="hamburger-icon" class="hamburger-icon hide-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="nav-links hide-mobile">
+          <a href="index.html">Home</a>
+          <a href="./origin.html">Origin</a>
+          <a class="current-page" href="./our-coffee.html">Our Coffee</a>
+          <div class="dropdown">
+            <button class="dropdown-btn">Products</button>
+            <div class="dropdown-content">
+              <a href="./products-hot.html" class="dropdown-item">Hot</a>
+              <a href="./products-iced.html" class="dropdown-item">Iced</a>
+            </div>
+          </div>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu-items">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="./origin.html">Origin</a>
+        </li>
+        <li>
+          <a href="./our-coffee.html">Our Coffee</a>
+        </li>
+        <li>
+          <a href="./products-hot.html">Hot coffee</a>
+        </li>
+        <li>
+          <a href="./products-iced.html">Iced coffee</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <section id="banner">
+      <h2 class="banner-title">All about Coffee</h2>
+      <h3 class="banner-title">The #1 beverage</h3>
+    </section>
+
+    <div class="container-main">
+      <div class="main-card">
+        <main>
+          <section class="grid-coffee">
+            <div class="grid-header">
+              <h2>Our Coffee</h2>
+              <p>
+                This page tells the story of our coffee. We like to please every
+                customer, which is why we have selected multiple grade-A brewing
+                methods so we can make the perfect cup of coffee for you! Have a
+                look below.
+              </p>
+            </div>
+            <div class="grid-item item-1">
+              <h2>Filter</h2>
+              <p>
+                Old school OG filter style. Coffee filtering uses a
+                coffee-brewing filter, usually made of disposable paper. This
+                enables it to trap the coffee grounds and allow the liquid
+                coffee to flow through.
+              </p>
+              <p>
+                Paper filters remove oily components called diterpenes; these
+                organic compounds, present in unfiltered coffee, have
+                anti-inflammatory properties. Metal or nylon mesh filters do not
+                remove these components.
+              </p>
+            </div>
+            <img class="grid-img img-1" src="./img/filterr.jpg" alt="" />
+
+            <div class="grid-item item-2">
+              <h2>French Press</h2>
+              <p>
+                A French press, also known as a cafetière or coffee plunger, is
+                a coffee brewing device. In 1923 Ugo Paolini, an Italian, lodged
+                patent documents relating to a tomato juice separator and he
+                developed the idea of making a coffee pot with a press action
+                and a filter.
+              </p>
+              <p>
+                A container with a plunger and filter screen that presses hot
+                water through ground coffee creates rich earthy taste in your
+                cup.
+              </p>
+            </div>
+            <img class="grid-img img-2" src="./img/french-press.jpg" alt="" />
+
+            <div class="grid-item item-3">
+              <h2>Perculator</h2>
+              <p>
+                In physics, chemistry and materials science, percolation (from
+                Latin percolare, "to filter" or "trickle through") refers to the
+                movement and filtering of fluids through porous materials. It is
+                described by Darcy's law. Coffee percolation where the solvent
+                is water, the permeable substance is the coffee grounds.
+              </p>
+              <p>
+                It brews coffee by passing boiling water pressurized by steam
+                through the ground.
+              </p>
+            </div>
+            <img class="grid-img img-3" src="./img/perculator.jpg" alt="" />
+
+            <div class="grid-item item-4">
+              <h2>Siphon</h2>
+              <p>
+                A vacuum coffee maker brews coffee using two chambers where
+                vapor pressure and gravity produce coffee. This type of coffee
+                maker is also known as vac pot, and was invented in Berlin
+                during the 1830s.
+              </p>
+            </div>
+            <img class="grid-img img-4" src="./img/siphon.jpg" alt="" />
+
+            <div class="grid-item item-5">
+              <h2>Instant</h2>
+              <p>
+                Instant coffee does not get the love it deserves. Are you in a
+                rush? No problem, we got your back with the best instant coffee
+                in the world!
+              </p>
+              <p>
+                Instant coffee is ideal for to-go: as it dissolves in the liquid
+                whilst in motion, being on the move keeps it nice and saturated.
+              </p>
+            </div>
+            <img class="grid-img img-5" src="./img/instant.jpg" alt="" />
+
+            <div class="grid-footer">
+              <h2>And more...!</h2>
+              <p>
+                This is just a selection, our range of ways for producing coffee
+                is not limited to above standards. Ask personel for more
+                information!
+              </p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <footer>
+      2021 &copy; BramVander
+      <div class="footer-socials">
+        <img src="./img/icons/facebook.png" alt="" class="icon" />
+        <a href="www.facebook.com" target="_blank">Facebook</a>
+      </div>
+
+      <div class="footer-socials">
+        <img src="./img/icons/twitter.png" alt="" class="icon" />
+        <a href="www.twitter.com" target="_blank">Twitter</a>
+      </div>
+
+      <div class="footer-socials">
+        <img src="./img/icons/linkedin.png" alt="" class="icon" />
+        <a href="www.linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
