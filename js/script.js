@@ -80,6 +80,7 @@ if (hotList) {
     // Guard clause for (mis)click on parent
     if (e.target.classList.contains("hot-list")) return;
     let target = e.target.dataset.img;
+    // Set relative img source with hovered dataset
     galleryImg.src = `../img/${target}.jpg`;
   });
 }
