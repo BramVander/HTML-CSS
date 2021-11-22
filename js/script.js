@@ -31,7 +31,10 @@ function initMap() {
 
 // Logo click for homepage
 const goHome = function () {
-  window.location.href = "../index.html";
+  // local
+  // window.location.href = "../index.html";
+  // after compressed to zip folder we need to add root directory as unzipping creates an extra folder
+  window.location.href = "../HTML-CSS/index.html";
 };
 
 // Button back to top story page
