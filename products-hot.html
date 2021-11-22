@@ -4,22 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Zen+Kurenaido"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Dancing+Script"
-    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Hot Coffee</title>
   </head>
@@ -97,19 +81,22 @@
 
           <hr />
 
-          <h2>Hall of fame</h2>
-          <section class="gallery">
-            <h2 class="validator">Hot Products</h2>
-            <ol class="hot-list">
-              <li data-img="tonkabonen">Tonka Bean</li>
-              <li data-img="hazelnut">Hazelnut</li>
-              <li data-img="kopiluwak">Kopi-Luwak</li>
-            </ol>
+          <h2>Hall of Fame</h2>
+          <section class="gallery-hot">
+            <h2 class="validator">Hall of Fame</h2>
+            <div>
+              <h3>Today's Hot Items</h3>
+              <ol class="hot-list">
+                <li data-img="tonkabonen">Tonka Bean</li>
+                <li data-img="hazelnut">Hazelnut</li>
+                <li data-img="kopi">Kopi-Luwak Bean</li>
+              </ol>
+            </div>
 
             <div class="wrapper">
               <div class="media">
                 <div class="layer">
-                  <p>Top 3 Hottest!</p>
+                  <h3>Top 3 Hottest</h3>
                 </div>
                 <img class="gallery-img" src="./img/tonkabonen.jpg" alt="" />
               </div>
@@ -118,17 +105,18 @@
 
           <hr />
 
+          <h2>Products</h2>
           <section class="product-grid">
-            <h2 class="validator"></h2>
+            <h2 class="validator">Products</h2>
             <div class="card">
               <img
                 class="card-img"
                 src="./img/coffee-small.jpg"
-                srtcset="./img/small.jpg 2x"
-                alt="Iced Coffee"
+                srcset="./img/coffee.jpg 2x"
+                alt="Coffee"
               />
               <div class="card-text">
-                <h2>Regular Coffee</h2>
+                <h3>Regular Coffee</h3>
                 <p>Price: &euro;1.50</p>
               </div>
             </div>
@@ -137,11 +125,11 @@
               <img
                 class="card-img"
                 src="./img/americano-small.jpg"
-                srtcset="./img/americano.jpg 2x"
-                alt="Iced Coffee"
+                srcset="./img/americano.jpg 2x"
+                alt="Americano"
               />
               <div class="card-text">
-                <h2>Americano</h2>
+                <h3>Americano</h3>
                 <p>Price: &euro;1.50</p>
               </div>
             </div>
@@ -150,11 +138,11 @@
               <img
                 class="card-img"
                 src="./img/espresso-small.jpg"
-                srtcset="./img/espresso.jpg 2x"
-                alt="Iced Coffee"
+                srcset="./img/espresso.jpg 2x"
+                alt="Espresso"
               />
               <div class="card-text">
-                <h2>Espresso</h2>
+                <h3>Espresso</h3>
                 <p>Price: &euro;1.50</p>
               </div>
             </div>
@@ -162,12 +150,12 @@
             <div class="card">
               <img
                 class="card-img"
-                src="./img/latte-small.jpg"
-                srtcset="./img/latte.jpg 2x"
-                alt="Iced Coffee"
+                src="./img/lattee.jpg"
+                srcset="./img/lattee.jpg 2x"
+                alt="Latte"
               />
               <div class="card-text">
-                <h2>Latt&#233;</h2>
+                <h3>Latt&#233;</h3>
                 <p>Price: &euro;2-</p>
               </div>
             </div>
@@ -176,11 +164,11 @@
               <img
                 class="card-img"
                 src="./img/machhiato-small.jpg"
-                srtcset="./img/machhiato.jpg 2x"
-                alt="Iced Coffee"
+                srcset="./img/machhiato.jpg 2x"
+                alt="machhiato"
               />
               <div class="card-text">
-                <h2>Macchiato</h2>
+                <h3>Macchiato</h3>
                 <p>Price: &euro;2-</p>
               </div>
             </div>
@@ -189,11 +177,11 @@
               <img
                 class="card-img"
                 src="./img/cappuccino-small.jpg"
-                srtcset="./img/cappuccino.jpg 2x"
-                alt="Iced Coffee"
+                srcset="./img/cappuccino.jpg 2x"
+                alt="cappuchino"
               />
               <div class="card-text">
-                <h2>Cappuccino</h2>
+                <h3>Cappuccino</h3>
                 <p>Price: &euro;2-</p>
               </div>
             </div>
@@ -203,7 +191,7 @@
     </div>
 
     <footer>
-      2021 &copy; BramVander
+      2021 &copy; BramVander <strong>!NOT original content!</strong>
       <div class="footer-socials">
         <img src="./img/icons/facebook.png" alt="" class="icon" />
         <a href="www.facebook.com" target="_blank">Facebook</a>

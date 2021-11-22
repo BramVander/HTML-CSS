@@ -76,7 +76,7 @@
   }
 
   figure img {
-    max-width: 50%;
+    width: 50%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-top-right-radius: 0px;
@@ -123,6 +123,12 @@
   .img-5 {
     display: block;
     height: auto;
+  }
+
+  .gallery-hot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
@@ -187,14 +193,18 @@
   }
 
   .reverse img {
-    border-radius: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   figure img {
-    max-width: 100%;
     width: 100%;
-    padding: 1rem;
-    border-radius: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   .story-grid {
@@ -205,6 +215,22 @@
 
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Change animation from list to block */
+  .gallery-iced {
+    display: grid;
+  }
+  /* Center stuff */
+  .blok {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .blok {
+    line-height: 1rem;
+    font-size: 1rem !important;
   }
 }
 

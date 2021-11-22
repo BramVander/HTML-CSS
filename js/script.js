@@ -12,20 +12,20 @@ const galleryImg = document.querySelector(".gallery-img");
 
 // Initialize and add the map
 function initMap() {
-  // The location of Eindhoven
+  // Eindhoven lat/long
   const eindhoven = { lat: 51.43210725650786, lng: 5.463081326808157 };
   // The map, centered at Eindhoven
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 17,
     center: eindhoven,
   });
-  // The marker, positioned at Eindhoven
+  // Marker @ Eindhoven
   const marker = new google.maps.Marker({
     position: eindhoven,
     map: map,
   });
 
-  // initiate marker
+  // Initiate marker
   marker.setMap(map);
 }
 
@@ -34,7 +34,7 @@ const goHome = function () {
   window.location.href = "/";
 };
 
-// Button back to top
+// Button back to top story page
 const goTop = function () {
   document.documentElement.scrollTop = 300;
 };
@@ -46,20 +46,6 @@ hamburger.addEventListener("click", function () {
   overlay.classList.toggle("open");
   body.classList.toggle("no-scroll");
 });
-
-// Toggle class for current nav link
-// navLinks.addEventListener("click", function (e) {
-//   e.preventDefault();
-//   // Prevent click on parent
-//   if (!e.target.getAttribute("href")) return;
-//   const active = document.querySelector(".current-page");
-//   if (active) active.classList.remove("current-page");
-//   e.target.classList.add("current-page");
-
-//   // Travel to navlink
-//   const slug = e.target.getAttribute("href");
-//   window.location.href = slug;
-// });
 
 // Modal toggle
 if (photoGrid) {
