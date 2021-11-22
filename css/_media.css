@@ -255,10 +255,6 @@
     font-size: 2rem !important;
   }
 
-  #banner {
-    background-image: url("../img/bean-big.jpg");
-  }
-
   /* Not allowed to scale beyond siblings */
   .parent-5 {
     max-height: 81px;
