@@ -84,6 +84,9 @@ if (hotList) {
     if (e.target.classList.contains("hot-list")) return;
     let target = e.target.dataset.img;
     // Set relative img source with hovered dataset
-    galleryImg.src = `../img/${target}.jpg`;
+    // local
+    // galleryImg.src = `../img/${target}.jpg`;
+    // account for unzipping
+    galleryImg.src = `../HTML-CSS/img/${target}.jpg`;
   });
 }
