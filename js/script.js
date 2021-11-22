@@ -31,7 +31,7 @@ function initMap() {
 
 // Logo click for homepage
 const goHome = function () {
-  window.location.href = "/";
+  window.location.href = "../index.html";
 };
 
 // Button back to top story page

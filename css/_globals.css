@@ -530,7 +530,8 @@ hr {
   display: block;
 }
 
-iframe {
+iframe,
+.video {
   height: 100%;
 }
 
